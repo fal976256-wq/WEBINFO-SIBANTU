@@ -49,7 +49,7 @@ python3 -m http.server 8099
 # buka http://localhost:8099
 ```
 
-`fetch` JSON gagal di `file://`, jadi pratinjau wajib lewat server. Deploy: unggah seluruh isi `web/` ke Netlify / Vercel / GitHub Pages / cPanel.
+`fetch` JSON gagal di `file://`, jadi pratinjau wajib lewat server. Deploy: unggah seluruh isi `docs/` ke Netlify / Vercel / GitHub Pages / cPanel.
 
 ## Mengubah isi
 
