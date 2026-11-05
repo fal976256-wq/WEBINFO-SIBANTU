@@ -1,0 +1,353 @@
+{
+  "_catatan": "SEMUA NILAI DI BAWAH INI DATA CONTOH. Ganti dengan data resmi Dinas Sosial sebelum situs dipublikasikan, lalu ubah meta.draf menjadi false. Nomor bertanda XXXX wajib diisi. Foto kegiatan: letakkan berkas di aset/foto/ lalu isi kolom foto pada berita dan galeri.",
+  "meta": {
+    "diperbarui": "2026-11-05",
+    "draf": true
+  },
+  "program": {
+    "nama": "SIBANTU",
+    "kepanjangan": "Sistem Informasi Bantuan Sosial Terpadu",
+    "jenis": "Bantuan Sosial Tunai",
+    "singkatanJenis": "BST",
+    "instansi": "Dinas Sosial Provinsi Sulawesi Barat",
+    "wilayah": "Provinsi Sulawesi Barat"
+  },
+  "periode": {
+    "tahap": "Tahap III",
+    "tahun": 2026,
+    "status": "Berlangsung",
+    "statusKode": "berlangsung",
+    "mulai": "2026-10-20",
+    "selesai": "2026-11-28",
+    "kuota": 12640,
+    "tersalurkan": 9875,
+    "satuan": "KK",
+    "catatan": "Pencairan dilakukan bertahap per kabupaten sesuai jadwal undangan."
+  },
+  "nilai": [
+    {
+      "judul": "Sosialisasi",
+      "sub": "Edukasi & Informasi",
+      "teks": "Menyediakan edukasi dan informasi yang jelas, mudah dipahami, serta mudah diakses masyarakat mengenai program bantuan sosial.",
+      "ikon": "megaphone"
+    },
+    {
+      "judul": "Validasi",
+      "sub": "Data Tepat & Akurat",
+      "teks": "Mengutamakan ketepatan dan keakuratan data melalui proses verifikasi dan validasi agar informasi bantuan sosial dapat dipertanggungjawabkan.",
+      "ikon": "patch-check"
+    },
+    {
+      "judul": "Pelayanan",
+      "sub": "Inklusif & Ramah",
+      "teks": "Menghadirkan pelayanan yang inklusif, ramah, responsif, dan mengutamakan kebutuhan masyarakat tanpa diskriminasi.",
+      "ikon": "heart"
+    },
+    {
+      "judul": "Transparansi",
+      "sub": "Terbuka & Akuntabel",
+      "teks": "Mendorong keterbukaan informasi dan akuntabilitas dalam penyelenggaraan program bantuan sosial demi membangun kepercayaan masyarakat.",
+      "ikon": "file-earmark-check"
+    }
+  ],
+  "pengumuman": [
+    {
+      "id": "p-2026-11-01",
+      "tanggal": "2026-11-01",
+      "kategori": "Jadwal",
+      "penting": true,
+      "judul": "Pencairan Tahap III berlangsung 20 Oktober – 28 November 2026",
+      "isi": "Penerima yang namanya tercantum dalam surat undangan diharap hadir sesuai tanggal dan lokasi yang tertera. Jadwal per kabupaten dapat dilihat pada halaman Alur."
+    },
+    {
+      "id": "p-2026-10-28",
+      "tanggal": "2026-10-28",
+      "kategori": "Ketentuan",
+      "penting": false,
+      "judul": "Surat undangan asli wajib dibawa, fotokopi tidak dilayani",
+      "isi": "Petugas penyalur hanya melayani penerima yang membawa surat undangan asli beserta KTP dan KK. Penerima yang tidak dapat hadir dapat diwakilkan dengan surat kuasa."
+    },
+    {
+      "id": "p-2026-10-24",
+      "tanggal": "2026-10-24",
+      "kategori": "Layanan",
+      "penting": false,
+      "judul": "Lokasi penyaluran di setiap kabupaten",
+      "isi": "Penyaluran dilakukan di kantor pos dan titik layanan bank penyalur yang ditunjuk. Lokasi lengkap tercantum pada surat undangan masing-masing penerima."
+    },
+    {
+      "id": "p-2026-10-15",
+      "tanggal": "2026-10-15",
+      "kategori": "Peringatan",
+      "penting": true,
+      "judul": "Pencairan bantuan tidak dipungut biaya apa pun",
+      "isi": "Laporkan kepada helpdesk apabila ada pihak yang meminta uang, imbalan, atau data pribadi dengan alasan mempercepat pencairan."
+    }
+  ],
+  "jadwal": [
+    {
+      "tahap": "Tahap I",
+      "mulai": "2026-02-16",
+      "selesai": "2026-03-20",
+      "status": "selesai"
+    },
+    {
+      "tahap": "Tahap II",
+      "mulai": "2026-06-08",
+      "selesai": "2026-07-10",
+      "status": "selesai"
+    },
+    {
+      "tahap": "Tahap III",
+      "mulai": "2026-10-20",
+      "selesai": "2026-11-28",
+      "status": "berlangsung"
+    }
+  ],
+  "programBantuan": [
+    {
+      "id": "bst",
+      "nama": "Bantuan Sosial Tunai (BST)",
+      "ringkas": "Bantuan uang tunai per tahap untuk keluarga penerima manfaat yang telah ditetapkan.",
+      "sasaran": "Keluarga miskin dan rentan yang terdaftar dalam DTKS dan lolos verifikasi berjenjang.",
+      "manfaat": "Dana bantuan disalurkan langsung kepada penerima melalui bank/pos penyalur, tanpa potongan.",
+      "status": "Berjalan"
+    },
+    {
+      "id": "pendampingan",
+      "nama": "Pendampingan Sosial",
+      "ringkas": "Pendampingan bagi penerima lanjut usia, penyandang disabilitas, dan warga terpencil.",
+      "sasaran": "Penerima BST yang tidak dapat hadir sendiri ke lokasi penyaluran.",
+      "manfaat": "Pendampingan pengurusan dokumen dan pengantaran ke lokasi penyaluran.",
+      "status": "Berjalan"
+    },
+    {
+      "id": "edukasi",
+      "nama": "Edukasi & Sosialisasi Warga",
+      "ringkas": "Kegiatan sosialisasi kriteria, alur, dan pencegahan pungutan liar di tingkat desa.",
+      "sasaran": "Warga, perangkat desa, dan pendamping sosial di enam kabupaten.",
+      "manfaat": "Warga memahami hak dan prosedur sehingga tidak bergantung pada perantara.",
+      "status": "Berjalan"
+    }
+  ],
+  "berita": [
+    {
+      "id": "sosialisasi-mamuju",
+      "tanggal": "2026-11-03",
+      "kategori": "Sosialisasi",
+      "judul": "Sosialisasi kriteria penerima digelar di lima desa Kabupaten Mamuju",
+      "ringkas": "Warga dan perangkat desa membahas kriteria, dokumen, serta jadwal pengusulan tahap berikutnya.",
+      "isi": [
+        "Dinas Sosial Provinsi Sulawesi Barat bersama dinas sosial kabupaten menggelar sosialisasi kriteria calon penerima bantuan sosial tunai di lima desa di Kabupaten Mamuju. Kegiatan ini menjadi tahap awal sebelum musyawarah desa menetapkan calon penerima.",
+        "Dalam sosialisasi, warga menerima penjelasan mengenai dokumen yang harus disiapkan, mekanisme musyawarah, serta cara menyampaikan keberatan bila merasa memenuhi kriteria tetapi belum tercatat.",
+        "Perangkat desa juga dilatih menggunakan aplikasi SIBANTU untuk mengunggah data calon penerima beserta Surat Pernyataan Tanggung Jawab Mutlak (SPTJM) kolektif dari kepala desa.",
+        "Kegiatan serupa dijadwalkan berlanjut ke kabupaten lain sebelum periode pengusulan tahap berikutnya dibuka."
+      ]
+    },
+    {
+      "id": "verifikasi-bap",
+      "tanggal": "2026-10-30",
+      "kategori": "Validasi",
+      "judul": "Verifikasi kabupaten selesai, BAP 42 desa diteruskan ke provinsi",
+      "ringkas": "Dokumen Berita Acara Pemeriksaan dari 42 desa/kelurahan sudah diterima untuk direkonsiliasi.",
+      "isi": [
+        "Verifikator kabupaten/kota telah menyelesaikan pemeriksaan data calon penerima dari 42 desa/kelurahan. Pemeriksaan mencakup kesesuaian kriteria dan validitas identitas, termasuk pencocokan NIK.",
+        "Setelah seluruh data dalam satu desa/kelurahan disetujui, dinas sosial kabupaten menyusun Berita Acara Pemeriksaan (BAP) dan meneruskannya kepada provinsi.",
+        "Provinsi selanjutnya melakukan rekonsiliasi data dengan kabupaten/kota serta verifikasi ulang identitas sebelum penerima ditetapkan.",
+        "Data yang belum lolos verifikasi dikembalikan ke operator desa untuk diperbaiki melalui aplikasi SIBANTU."
+      ]
+    },
+    {
+      "id": "pencairan-tahap-3",
+      "tanggal": "2026-10-20",
+      "kategori": "Pelayanan",
+      "judul": "Pencairan Tahap III dimulai, kuota 12.640 keluarga penerima",
+      "ringkas": "Penyaluran berlangsung bertahap hingga 28 November 2026 sesuai jadwal undangan tiap kabupaten.",
+      "isi": [
+        "Pencairan bantuan sosial tunai Tahap III tahun anggaran 2026 dimulai pada 20 Oktober dan dijadwalkan selesai 28 November 2026. Kuota tahap ini tercatat 12.640 keluarga penerima.",
+        "Penerima diharap hadir sesuai tanggal dan lokasi pada surat undangan, dengan membawa KTP, KK, dan surat undangan asli. Penerima yang berhalangan dapat diwakilkan dengan surat kuasa.",
+        "Petugas menegaskan bahwa seluruh proses pencairan tidak dipungut biaya. Warga diminta melaporkan setiap permintaan uang kepada helpdesk dinas sosial."
+      ]
+    },
+    {
+      "id": "layanan-lansia",
+      "tanggal": "2026-10-08",
+      "kategori": "Pelayanan",
+      "judul": "Loket khusus lansia dan penyandang disabilitas disiapkan di titik penyaluran",
+      "ringkas": "Antrean terpisah dan pendampingan petugas untuk penerima yang membutuhkan bantuan.",
+      "isi": [
+        "Untuk memastikan layanan inklusif, titik penyaluran menyediakan loket khusus bagi penerima lanjut usia dan penyandang disabilitas, lengkap dengan kursi tunggu dan pendampingan petugas.",
+        "Keluarga dapat mengajukan pendampingan melalui desa/kelurahan sebelum tanggal penyaluran agar petugas menyiapkan jalur prioritas.",
+        "Layanan ini merupakan bagian dari nilai pelayanan SIBANTU: inklusif dan ramah bagi seluruh warga."
+      ]
+    },
+    {
+      "id": "transparansi-laporan",
+      "tanggal": "2026-09-25",
+      "kategori": "Transparansi",
+      "judul": "Laporan penyaluran Tahap II dipublikasikan",
+      "ringkas": "Realisasi penyaluran, jumlah penerima, dan sisa kuota dapat diperiksa pada halaman Transparansi.",
+      "isi": [
+        "Dinas Sosial Provinsi Sulawesi Barat mempublikasikan ringkasan realisasi penyaluran Tahap II sebagai bagian dari komitmen keterbukaan informasi.",
+        "Ringkasan memuat jumlah penerima yang telah dicairkan, sisa kuota, serta jumlah penerima yang dijadwalkan ulang karena berhalangan hadir atau dokumen belum lengkap.",
+        "Publikasi ini diperbarui setiap tahap. Data rinci per penerima tidak dipublikasikan demi perlindungan data pribadi."
+      ]
+    }
+  ],
+  "sosialisasi": [
+    {
+      "judul": "Materi sosialisasi kriteria penerima",
+      "jenis": "Paparan",
+      "ringkas": "Kriteria, dokumen, dan tahapan pengusulan dalam satu paparan ringkas untuk rapat desa.",
+      "tautan": "persyaratan.html"
+    },
+    {
+      "judul": "Alur pengusulan sampai penetapan",
+      "jenis": "Infografis",
+      "ringkas": "Bagan lima tahap dari musyawarah desa hingga Keputusan Gubernur.",
+      "tautan": "alur.html"
+    },
+    {
+      "judul": "Panduan operator desa",
+      "jenis": "Panduan",
+      "ringkas": "Langkah unggah data calon penerima, SPTJM kolektif, dan surat pengantar.",
+      "tautan": "alur.html"
+    },
+    {
+      "judul": "Waspada pungutan liar",
+      "jenis": "Edukasi",
+      "ringkas": "Ciri penipuan dan kanal pelaporan resmi bila dimintai uang atau data pribadi.",
+      "tautan": "kontak.html"
+    }
+  ],
+  "galeri": [
+    {
+      "judul": "Sosialisasi warga",
+      "keterangan": "Rapat sosialisasi kriteria penerima di tingkat desa.",
+      "tanggal": "2026-11-03",
+      "foto": ""
+    },
+    {
+      "judul": "Musyawarah desa",
+      "keterangan": "Penetapan calon penerima melalui musyawarah desa.",
+      "tanggal": "2026-10-27",
+      "foto": ""
+    },
+    {
+      "judul": "Verifikasi dokumen",
+      "keterangan": "Pemeriksaan kelengkapan berkas oleh operator.",
+      "tanggal": "2026-10-22",
+      "foto": ""
+    },
+    {
+      "judul": "Pencairan tahap III",
+      "keterangan": "Pelayanan penerima di titik penyaluran kabupaten.",
+      "tanggal": "2026-10-20",
+      "foto": ""
+    },
+    {
+      "judul": "Loket prioritas",
+      "keterangan": "Pendampingan penerima lanjut usia dan disabilitas.",
+      "tanggal": "2026-10-08",
+      "foto": ""
+    },
+    {
+      "judul": "Edukasi anti-pungli",
+      "keterangan": "Penyuluhan pencegahan pungutan liar di kantor desa.",
+      "tanggal": "2026-09-30",
+      "foto": ""
+    }
+  ],
+  "transparansi": {
+    "catatan": "Angka diperbarui setiap tahap penyaluran. Data per penerima tidak dipublikasikan demi perlindungan data pribadi.",
+    "dokumen": [
+      {
+        "nama": "SK Kepala Desa/Lurah",
+        "tahap": "Desa/Kelurahan",
+        "keterangan": "Dasar pengusulan calon penerima hasil musyawarah desa."
+      },
+      {
+        "nama": "SPTJM Kolektif",
+        "tahap": "Desa/Kelurahan",
+        "keterangan": "Pernyataan tanggung jawab mutlak kepala desa atas kriteria calon."
+      },
+      {
+        "nama": "Berita Acara Pemeriksaan (BAP)",
+        "tahap": "Kabupaten/Kota",
+        "keterangan": "Hasil verifikasi data satu desa/kelurahan."
+      },
+      {
+        "nama": "Rekomendasi Provinsi",
+        "tahap": "Provinsi",
+        "keterangan": "Hasil rekonsiliasi dan verifikasi ulang identitas."
+      },
+      {
+        "nama": "Keputusan Gubernur",
+        "tahap": "Provinsi",
+        "keterangan": "Penetapan daftar final penerima pada tahun anggaran berjalan."
+      }
+    ]
+  },
+  "kontak": {
+    "instansi": "Dinas Sosial Provinsi Sulawesi Barat",
+    "alamat": "Jl. Abdul Malik Pattana Endeng, Simboro, Mamuju, Sulawesi Barat",
+    "telepon": "0426-XXXXXX",
+    "whatsapp": "0811-XXXX-XXXX",
+    "email": "sibantu@sulbarprov.go.id",
+    "jam": "Senin–Jumat, 08.00–16.00 WITA",
+    "peta": "https://www.google.com/maps?q=Dinas+Sosial+Provinsi+Sulawesi+Barat&output=embed"
+  },
+  "kabupaten": [
+    {
+      "nama": "Majene",
+      "helpdesk": "0422-XXXXXX"
+    },
+    {
+      "nama": "Polewali Mandar",
+      "helpdesk": "0428-XXXXXX"
+    },
+    {
+      "nama": "Mamasa",
+      "helpdesk": "0428-XXXXXX"
+    },
+    {
+      "nama": "Mamuju",
+      "helpdesk": "0426-XXXXXX"
+    },
+    {
+      "nama": "Mamuju Tengah",
+      "helpdesk": "0426-XXXXXX"
+    },
+    {
+      "nama": "Pasangkayu",
+      "helpdesk": "0457-XXXXXX"
+    }
+  ],
+  "nilaiIntro": "Empat nilai utama yang menjadi landasan kami dalam menghadirkan informasi dan pelayanan bantuan sosial yang berkualitas.",
+  "standar": {
+    "intro": "SIBANTU berkomitmen menjunjung tinggi standar pelayanan publik yang profesional, transparan, dan bertanggung jawab. Setiap informasi dan proses pelayanan dilandaskan pada prinsip:",
+    "prinsip": [
+      {
+        "nama": "Akurat",
+        "teks": "Mengutamakan ketepatan data dan informasi."
+      },
+      {
+        "nama": "Terbuka",
+        "teks": "Menyediakan informasi yang jelas dan mudah diakses."
+      },
+      {
+        "nama": "Inklusif",
+        "teks": "Memberikan pelayanan yang ramah dan setara bagi seluruh masyarakat."
+      },
+      {
+        "nama": "Akuntabel",
+        "teks": "Menjunjung tinggi tanggung jawab dan keterbukaan dalam pengelolaan informasi."
+      },
+      {
+        "nama": "Responsif",
+        "teks": "Mengutamakan kecepatan dan kepedulian dalam menanggapi kebutuhan masyarakat."
+      }
+    ],
+    "penutup": "Melalui standar tersebut, SIBANTU hadir sebagai sarana informasi bantuan sosial yang mendukung pelayanan publik yang lebih baik di Provinsi Sulawesi Barat."
+  }
+}

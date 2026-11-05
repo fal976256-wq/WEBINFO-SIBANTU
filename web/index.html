@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIBANTU — Informasi Bantuan Sosial Tunai Provinsi Sulawesi Barat</title>
+  <meta name="description" content="Portal resmi SIBANTU: persyaratan, alur pengusulan, jadwal pencairan, berita, galeri, dan transparansi bantuan sosial tunai Provinsi Sulawesi Barat.">
+  <meta name="theme-color" content="#155B91">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SIBANTU — Informasi Bantuan Sosial Tunai Provinsi Sulawesi Barat">
+  <meta property="og:description" content="Portal resmi SIBANTU: persyaratan, alur pengusulan, jadwal pencairan, berita, galeri, dan transparansi bantuan sosial tunai Provinsi Sulawesi Barat.">
+  <meta property="og:locale" content="id_ID">
+  <link rel="icon" href="aset/logo-sibantu.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/sibantu.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#utama">Lompat ke isi utama</a>
+
+  <div class="draft-banner" data-draft hidden>
+    <div class="container"><i class="bi bi-exclamation-triangle-fill"></i>Situs masih dalam penyusunan. Angka, jadwal, dan berita pada halaman ini adalah data contoh.</div>
+  </div>
+
+  <div class="topbar">
+    <div class="container inner">
+      <span class="instansi"><img class="topbar-logo" src="aset/logo-pemda.webp" alt="" width="24" height="26">Pemerintah Provinsi Sulawesi Barat · Dinas Sosial</span>
+      <span class="d-none d-md-flex align-items-center gap-3">
+        <span><i class="bi bi-clock me-1" aria-hidden="true"></i>Senin–Jumat, 08.00–16.00 WITA</span>
+        <a href="kontak.html">Helpdesk <i class="bi bi-arrow-right-short"></i></a>
+      </span>
+    </div>
+  </div>
+
+  <div class="nav-wrap">
+    <nav class="nav" aria-label="Navigasi utama">
+      <div class="container inner">
+        <a class="brand" href="index.html" aria-label="SIBANTU — beranda">
+          <img src="aset/logo-sibantu.webp" alt="Logo SIBANTU" width="62" height="46">
+          <span>
+            <span class="brand-name">SIBANTU</span>
+            <small>Sistem Informasi Bantuan<br>Sosial Terpadu</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menuMobile" aria-label="Buka menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links">
+          <div class="item"><a href="index.html" class="active" aria-current="page">Beranda</a></div>
+          <div class="item"><a href="profil.html">Profil</a></div>
+          <details class="dd">
+            <summary aria-haspopup="true">Informasi <i class="bi bi-chevron-down" style="font-size:.7rem"></i></summary>
+            <div class="dd-panel">
+              <a href="persyaratan.html">Persyaratan<span>Dokumen dan kriteria penerima</span></a>
+              <a href="alur.html">Alur pengusulan<span>Delapan langkah sampai penetapan</span></a>
+              <a href="program.html">Program bantuan<span>Jenis layanan dan sasaran</span></a>
+              <a href="sosialisasi.html">Sosialisasi<span>Materi edukasi untuk desa</span></a>
+              <a href="pengumuman.html">Pengumuman<span>Jadwal dan ketentuan resmi</span></a>
+            </div>
+          </details>
+          <div class="item"><a href="berita.html">Berita</a></div>
+          <div class="item"><a href="galeri.html">Galeri</a></div>
+          <div class="item"><a href="transparansi.html">Transparansi</a></div>
+          <div class="item ms-2"><a class="btn btn-primary-custom btn-sm" style="padding:.55rem 1.1rem" href="kontak.html">Kontak</a></div>
+          <button class="icon-btn ms-2" type="button" data-buka-cari aria-label="Buka pencarian">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="mobile-panel" id="menuMobile">
+          <a href="index.html">Beranda</a>
+          <a href="profil.html">Profil SIBANTU</a>
+          <details>
+            <summary>Informasi</summary>
+            <div>
+              <a href="persyaratan.html">Persyaratan</a>
+              <a href="alur.html">Alur pengusulan</a>
+              <a href="program.html">Program bantuan</a>
+              <a href="sosialisasi.html">Sosialisasi</a>
+              <a href="pengumuman.html">Pengumuman</a>
+            </div>
+          </details>
+          <a href="berita.html">Berita</a>
+          <a href="galeri.html">Galeri</a>
+          <a href="transparansi.html">Transparansi</a>
+          <a href="kontak.html">Kontak</a>
+          <button class="btn btn-outline-custom w-100 mt-2 justify-content-center" type="button" data-buka-cari>
+            <i class="bi bi-search"></i> Cari informasi
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="search-dialog" id="pencarian" role="dialog" aria-modal="true" aria-label="Pencarian situs" aria-hidden="true">
+    <div class="search-box">
+      <div class="head">
+        <i class="bi bi-search text-blue" aria-hidden="true"></i>
+        <input id="inputCari" type="search" placeholder="Cari halaman, berita, atau program…" aria-label="Kata kunci pencarian">
+        <button class="icon-btn" type="button" data-tutup-cari aria-label="Tutup pencarian"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="search-results" id="hasilCari"></div>
+    </div>
+  </div>
+
+  <main id="utama">
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container inner">
+        <div class="row g-4 g-lg-5 align-items-center">
+          <div class="col-lg-7">
+            <p class="kicker">Portal resmi SIBANTU</p>
+            <span class="hero-badge">
+              <span class="pulse" aria-hidden="true"></span>
+              <span data-bind="periode.tahap">Tahap III</span>&nbsp;sedang berjalan ·
+              <span data-bind="periode.tahun">2026</span>
+            </span>
+            <h1>Bantuan sosial tunai yang jelas, terbuka, dan tepat sasaran.</h1>
+            <p class="hero-lead">SIBANTU menyatukan persyaratan, alur pengusulan, jadwal pencairan, dan pengumuman resmi bantuan sosial tunai Provinsi Sulawesi Barat dalam satu portal.</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary-custom" href="persyaratan.html">Lihat persyaratan <i class="bi bi-arrow-right"></i></a>
+              <a class="btn btn-outline-custom" href="alur.html">Cek alur pengusulan</a>
+            </div>
+            <div class="hero-meta">
+              <span><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Diperbarui <span data-bind="meta.diperbarui" data-format="tanggal">5 November 2026</span></span>
+              <span><i class="bi bi-building" aria-hidden="true"></i><span data-bind="program.instansi">Dinas Sosial Provinsi Sulawesi Barat</span></span>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="hero-visual">
+              <div class="hero-photo">
+                <div class="halo" aria-hidden="true"></div>
+                <img class="logo-hero" src="aset/logo-sibantu.webp" alt="Logo resmi SIBANTU" width="280" height="223">
+              </div>
+              <div class="status-card">
+                <p class="row-label mb-1">Status penyaluran</p>
+                <p class="periode mb-1"><span data-bind="periode.tahap">Tahap III</span> · <span data-bind="periode.tahun">2026</span></p>
+                <div class="status-meta">
+                  <span><i class="bi bi-calendar3 me-1" aria-hidden="true"></i><span data-bind="periode.mulai" data-format="tanggal">20 Oktober 2026</span> – <span data-bind="periode.selesai" data-format="tanggal">28 November 2026</span></span>
+                  <span class="chip chip--green" data-status-chip>Berlangsung</span>
+                </div>
+                <div class="status-bar" role="progressbar" aria-label="Progres penyaluran" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78"><span data-progress style="width:78%"></span></div>
+                <p class="mb-0 mt-2" style="font-size:.82rem;color:var(--muted);">
+                  <span data-bind="periode.tersalurkan" data-format="angka">9.875</span> dari
+                  <span data-bind="periode.kuota" data-format="angka">12.640</span> <span data-bind="periode.satuan">KK</span> ·
+                  <span data-progress-label>78% tersalurkan</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- TICKER -->
+    <div class="ticker">
+      <div class="container">
+        <div class="inner">
+          <span class="label">Pengumuman</span>
+          <div class="track" aria-live="polite"><span data-ticker><b>Pencairan Tahap III berlangsung 20 Oktober – 28 November 2026</b> &nbsp;•&nbsp; <b>Pencairan tidak dipungut biaya apa pun</b></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NILAI -->
+    <section class="section-sm" aria-labelledby="judul-nilai">
+      <div class="container">
+        <div class="section-head d-flex flex-wrap align-items-end justify-content-between gap-3">
+          <div>
+            <p class="kicker">Nilai layanan</p>
+            <h2 id="judul-nilai" class="mb-2">Empat nilai layanan SIBANTU</h2>
+            <p class="section-sub">Empat nilai utama yang menjadi landasan kami dalam menghadirkan informasi dan pelayanan bantuan sosial yang berkualitas.</p>
+          </div>
+          <a class="link-arrow" href="profil.html">Kenali SIBANTU <i class="bi bi-arrow-right"></i></a>
+        </div>
+                <figure class="figure-nilai">
+          <img src="aset/nilai-layanan.webp" alt="Infografis Empat Nilai Layanan SIBANTU: 01 Sosialisasi (edukasi dan informasi yang jelas), 02 Validasi (ketepatan dan keakuratan data), 03 Pelayanan (inklusif, ramah, responsif), 04 Transparansi (keterbukaan informasi dan akuntabilitas)." width="1500" height="659" loading="lazy">
+          <figcaption>Infografis resmi Empat Nilai Layanan SIBANTU. <a href="profil.html#judul-prinsip">Baca uraian teksnya</a>.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PENGENALAN -->
+    <section class="section" aria-labelledby="judul-pengenalan">
+      <div class="container">
+        <div class="row g-4 g-lg-5 align-items-center">
+          <div class="col-lg-6">
+            <div class="media media--wide reveal">
+              <span class="placeholder-art">Dokumentasi kegiatan</span>
+              <span class="caption">Foto kegiatan menyusul</span>
+            </div>
+            <div class="row g-3 mt-1">
+              <div class="col-6">
+                <div class="panel h-100">
+                  <p class="panel-head mb-2">Tahap berjalan</p>
+                  <p class="mb-0 font-display" style="font-family:var(--font-display);font-weight:800;color:var(--navy);font-size:1.1rem;"><span data-bind="periode.tahap">Tahap III</span> · <span data-bind="periode.tahun">2026</span></p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="panel h-100">
+                  <p class="panel-head mb-2">Penerima tahap ini</p>
+                  <p class="mb-0 tnum" style="font-family:var(--font-display);font-weight:800;color:var(--navy);font-size:1.1rem;"><span data-bind="periode.kuota" data-format="angka">12.640</span> KK</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <p class="kicker">Tentang SIBANTU</p>
+            <h2 id="judul-pengenalan">Satu pintu informasi, tanpa perantara.</h2>
+            <p>SIBANTU — Sistem Informasi Bantuan Sosial Terpadu — mengubah cara data bantuan sosial dikelola. Pengusulan dan verifikasi tidak lagi memakan waktu lama: notifikasi otomatis dan alur kerja terstandarisasi mempercepat proses dari desa hingga provinsi.</p>
+            <p>Validasi bertingkat dan pengecekan silang digital menekan data ganda serta data fiktif. Jejak audit berjenjang mencatat setiap perubahan, persetujuan, dan penolakan secara kronologis — menjawab rekomendasi BPK dan memudahkan pemeriksaan.</p>
+            <ul class="check-list">
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Persyaratan, alur, dan jadwal dapat dibaca tanpa mendaftar.</span></li>
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Dokumen SK dan SPTJM terunggah digital di setiap tingkatan.</span></li>
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Tidak ada data pribadi penerima yang dipublikasikan.</span></li>
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Setiap angka bersumber dari data resmi dinas.</span></li>
+            </ul>
+            <a class="btn btn-outline-custom mt-2" href="profil.html">Selengkapnya tentang SIBANTU</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM -->
+    <section class="section bg-white-2" aria-labelledby="judul-program">
+      <div class="container">
+        <div class="section-head d-flex flex-wrap align-items-end justify-content-between gap-3">
+          <div>
+            <p class="kicker">Program bantuan</p>
+            <h2 id="judul-program" class="mb-2">Layanan yang berjalan</h2>
+            <p class="section-sub">Tiga layanan utama: penyaluran tunai, pendampingan sosial, dan edukasi warga.</p>
+          </div>
+          <a class="link-arrow" href="program.html">Semua program <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="row g-3" data-program>
+          <div class="col-md-4"><div class="card"><h3>Bantuan Sosial Tunai (BST)</h3><p>Bantuan uang tunai per tahap untuk keluarga penerima manfaat yang telah ditetapkan.</p></div></div>
+          <div class="col-md-4"><div class="card"><h3>Pendampingan Sosial</h3><p>Pendampingan bagi penerima lanjut usia, penyandang disabilitas, dan warga terpencil.</p></div></div>
+          <div class="col-md-4"><div class="card"><h3>Edukasi &amp; Sosialisasi Warga</h3><p>Kegiatan sosialisasi kriteria, alur, dan pencegahan pungutan liar di tingkat desa.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALUR -->
+    <section class="section" aria-labelledby="judul-alur">
+      <div class="container">
+        <div class="section-head d-flex flex-wrap align-items-end justify-content-between gap-3">
+          <div>
+            <p class="kicker">Alur pengusulan</p>
+            <h2 id="judul-alur" class="mb-2">Lima tahap, satu rantai data</h2>
+            <p class="section-sub">Dari musyawarah desa sampai Keputusan Gubernur. Warga hanya hadir pada saat pencairan.</p>
+          </div>
+          <a class="link-arrow" href="alur.html">Rincian delapan langkah <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="rail">
+          <div class="rail-item reveal"><div class="rail-num">01</div><h3>Musyawarah desa</h3><p>Warga dan perangkat desa menetapkan calon penerima lewat SK Kepala Desa/Lurah.</p></div>
+          <div class="rail-item reveal"><div class="rail-num">02</div><h3>Pengusulan</h3><p>Operator SIBANTU desa mengunggah identitas dan SPTJM kolektif, lalu mengirim surat pengantar.</p></div>
+          <div class="rail-item reveal"><div class="rail-num">03</div><h3>Verifikasi kabupaten</h3><p>Verifikator memeriksa kriteria dan identitas; bila disetujui, BAP diteruskan ke provinsi.</p></div>
+          <div class="rail-item reveal"><div class="rail-num">04</div><h3>Rekonsiliasi provinsi</h3><p>Provinsi mencocokkan data dan memverifikasi ulang identitas antar-kabupaten.</p></div>
+          <div class="rail-item reveal"><div class="rail-num">05</div><h3>Penetapan Gubernur</h3><p>Berkas legalitas final diunggah dan Keputusan Gubernur diterbitkan.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BERITA -->
+    <section class="section bg-white-2" aria-labelledby="judul-berita">
+      <div class="container">
+        <div class="section-head d-flex flex-wrap align-items-end justify-content-between gap-3">
+          <div>
+            <p class="kicker">Kabar terbaru</p>
+            <h2 id="judul-berita" class="mb-0">Berita dan informasi</h2>
+          </div>
+          <a class="link-arrow" href="berita.html">Semua berita <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="row g-4" data-berita data-limit="3">
+          <div class="col-md-4"><a class="news-card" href="berita.html"><div class="thumb"><span class="placeholder-art">Dokumentasi</span></div><div class="meta"><span class="chip">Sosialisasi</span><span>3 Nov 2026</span></div><h3>Sosialisasi kriteria penerima digelar di lima desa Kabupaten Mamuju</h3><p>Warga dan perangkat desa membahas kriteria, dokumen, serta jadwal pengusulan.</p><span class="more">Baca selengkapnya</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOSIALISASI -->
+    <section class="section" aria-labelledby="judul-sosialisasi">
+      <div class="container">
+        <div class="band">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-7">
+              <p class="kicker kicker--light">Sosialisasi &amp; edukasi</p>
+              <h2 id="judul-sosialisasi">Warga paham, pungli terhindar.</h2>
+              <p>Materi sosialisasi disiapkan untuk rapat desa: kriteria, dokumen, alur pengusulan, dan cara melaporkan permintaan uang.</p>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <a class="btn btn-white-custom" href="sosialisasi.html">Materi sosialisasi</a>
+                <a class="btn btn-outline-custom" style="border-color:rgba(255,255,255,.4);color:#fff" href="kontak.html">Laporkan pungli</a>
+              </div>
+            </div>
+            <div class="col-lg-5 text-center">
+              <img src="aset/maskot-sibantu.svg" alt="" width="180" height="197" style="max-width:60%" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERI -->
+    <section class="section-sm" aria-labelledby="judul-galeri">
+      <div class="container">
+        <div class="section-head d-flex flex-wrap align-items-end justify-content-between gap-3">
+          <div>
+            <p class="kicker">Galeri</p>
+            <h2 id="judul-galeri" class="mb-0">Dokumentasi kegiatan</h2>
+          </div>
+          <a class="link-arrow" href="galeri.html">Buka galeri <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="gallery" data-galeri>
+          <figure><div class="thumb"><span class="placeholder-art">Dokumentasi</span></div><figcaption><b>Sosialisasi warga</b>Rapat sosialisasi kriteria penerima.</figcaption></figure>
+          <figure><div class="thumb"><span class="placeholder-art">Dokumentasi</span></div><figcaption><b>Musyawarah desa</b>Penetapan calon penerima.</figcaption></figure>
+          <figure><div class="thumb"><span class="placeholder-art">Dokumentasi</span></div><figcaption><b>Verifikasi dokumen</b>Pemeriksaan berkas.</figcaption></figure>
+          <figure><div class="thumb"><span class="placeholder-art">Dokumentasi</span></div><figcaption><b>Pencairan</b>Pelayanan di titik penyaluran.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSPARANSI -->
+    <section class="section" aria-labelledby="judul-transparansi">
+      <div class="container">
+        <div class="band">
+          <div class="row g-4 align-items-end mb-4">
+            <div class="col-lg-7">
+              <p class="kicker kicker--light">Transparansi</p>
+              <h2 id="judul-transparansi" class="mb-2">Angka yang bisa diperiksa.</h2>
+              <p class="mb-0">Realisasi penyaluran dan dokumen penetapan dipublikasikan setiap tahap.</p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+              <a class="link-arrow link-arrow--light" href="transparansi.html">Halaman transparansi <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="metrics">
+            <div class="metric"><div class="gold-rule"></div><div class="n tnum" data-bind="periode.kuota" data-format="angka">12.640</div><div class="l">Kuota penerima (KK)</div></div>
+            <div class="metric"><div class="gold-rule"></div><div class="n tnum" data-bind="periode.tersalurkan" data-format="angka">9.875</div><div class="l">Sudah tersalurkan (KK)</div></div>
+            <div class="metric"><div class="gold-rule"></div><div class="n tnum" data-progress-label>78% tersalurkan</div><div class="l">Progres tahap berjalan</div></div>
+            <div class="metric"><div class="gold-rule"></div><div class="n">5</div><div class="l">Dokumen legalitas</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="section-sm" aria-labelledby="judul-kontak">
+      <div class="container">
+        <div class="row g-4 g-lg-5 align-items-center">
+          <div class="col-lg-7">
+            <p class="kicker">Kontak</p>
+            <h2 id="judul-kontak">Ada pertanyaan atau kendala pencairan?</h2>
+            <p class="section-sub">Hubungi helpdesk pada hari kerja, atau dinas sosial kabupaten tempat Anda terdaftar.</p>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+              <a class="btn btn-primary-custom" href="kontak.html">Hubungi helpdesk</a>
+              <a class="btn btn-outline-custom" href="pengumuman.html">Baca pengumuman</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="panel">
+              <p class="panel-head mb-3">Kantor layanan</p>
+              <p class="mb-2" style="font-size:.95rem;"><i class="bi bi-geo-alt me-2 text-blue"></i><span data-kontak="alamat">Jl. Abdul Malik Pattana Endeng, Simboro, Mamuju</span></p>
+              <p class="mb-2" style="font-size:.95rem;"><i class="bi bi-telephone me-2 text-blue"></i><span data-kontak="telepon">0426-XXXXXX</span></p>
+              <p class="mb-0" style="font-size:.95rem;"><i class="bi bi-clock me-2 text-blue"></i><span data-kontak="jam">Senin–Jumat, 08.00–16.00 WITA</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="brand mb-3">
+            <img src="aset/logo-sibantu.webp" alt="" width="78" height="58" loading="lazy">
+            <span>
+              <span class="brand-name">SIBANTU</span>
+              <small>Sistem Informasi Bantuan Sosial Terpadu<br>Provinsi Sulawesi Barat</small>
+            </span>
+          </div>
+          <p style="font-size:.94rem;max-width:34ch;">Portal informasi resmi bantuan sosial tunai: persyaratan, alur, jadwal, dan pengumuman.</p>
+          <p class="mt-3 mb-0" style="font-size:.85rem;color:rgba(255,255,255,.55);">Dikelola Dinas Sosial Provinsi Sulawesi Barat.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <p class="footer-title">Halaman</p>
+          <a href="index.html">Beranda</a>
+          <a href="profil.html">Profil</a>
+          <a href="berita.html">Berita</a>
+          <a href="galeri.html">Galeri</a>
+          <a href="transparansi.html">Transparansi</a>
+        </div>
+        <div class="col-6 col-lg-3">
+          <p class="footer-title">Informasi</p>
+          <a href="persyaratan.html">Persyaratan</a>
+          <a href="alur.html">Alur pengusulan</a>
+          <a href="program.html">Program bantuan</a>
+          <a href="sosialisasi.html">Sosialisasi</a>
+          <a href="pengumuman.html">Pengumuman</a>
+        </div>
+        <div class="col-lg-3">
+          <p class="footer-title">Kontak</p>
+          <p class="contact-line"><i class="bi bi-geo-alt" aria-hidden="true"></i><span data-kontak="alamat">Jl. Abdul Malik Pattana Endeng, Simboro, Mamuju, Sulawesi Barat</span></p>
+          <p class="contact-line"><i class="bi bi-telephone" aria-hidden="true"></i><span data-kontak="telepon">0426-XXXXXX</span></p>
+          <p class="contact-line"><i class="bi bi-envelope" aria-hidden="true"></i><span data-kontak="email">sibantu@sulbarprov.go.id</span></p>
+          <img class="logo-pemda mt-2" src="aset/logo-pemda.webp" alt="Logo Provinsi Sulawesi Barat" width="40" height="44" loading="lazy">
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span>© <span data-year>2026</span> Dinas Sosial Provinsi Sulawesi Barat.</span>
+        <span>Tidak ada data pribadi penerima yang dipublikasikan di situs ini.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="back-top" href="#utama" aria-label="Kembali ke atas"><i class="bi bi-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/sibantu.js"></script>
+</body>
+</html>

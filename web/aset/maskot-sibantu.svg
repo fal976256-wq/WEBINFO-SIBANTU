@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 460" role="img" aria-label="Maskot burung SIBANTU">
+  <title>Maskot burung SIBANTU</title>
+  <!-- ekor -->
+  <path d="M175 300 L128 392 L196 356 Z" fill="#397FAE"/>
+  <path d="M196 306 L170 404 L232 366 Z" fill="#155B91"/>
+  <!-- badan -->
+  <ellipse cx="222" cy="296" rx="96" ry="112" fill="#155B91"/>
+  <ellipse cx="226" cy="316" rx="62" ry="80" fill="#F5F5F0"/>
+  <!-- sayap -->
+  <path d="M150 262c34-18 74-14 96 12-6 46-44 78-84 66-18-22-24-52-12-78Z" fill="#397FAE"/>
+  <path d="M166 292c18-8 38-7 54 2M160 316c18-8 40-7 56 3" stroke="#EDF4F9" stroke-width="5" stroke-linecap="round" fill="none" opacity=".7"/>
+  <!-- kaki -->
+  <path d="M196 396v26M196 422h-16M196 422h16" stroke="#D9A441" stroke-width="9" stroke-linecap="round"/>
+  <path d="M250 396v26M250 422h-16M250 422h16" stroke="#D9A441" stroke-width="9" stroke-linecap="round"/>
+  <!-- kepala -->
+  <circle cx="228" cy="166" r="80" fill="#102F55"/>
+  <!-- jambul -->
+  <path d="M196 92c10-26 34-40 58-34-14 8-22 20-24 34 12-6 26-6 38 0-22 10-40 14-58 12Z" fill="#D9A441"/>
+  <!-- paruh -->
+  <path d="M300 160c30 2 54 14 66 30-20 4-40 2-58-8Z" fill="#D9A441"/>
+  <path d="M300 178c22 8 38 16 50 24-18 4-36 0-52-10Z" fill="#C8932F"/>
+  <!-- mata -->
+  <circle cx="258" cy="152" r="20" fill="#FFFFFF"/>
+  <circle cx="262" cy="154" r="9" fill="#102F55"/>
+  <circle cx="265" cy="150" r="3" fill="#FFFFFF"/>
+  <!-- pipi -->
+  <ellipse cx="205" cy="190" rx="16" ry="10" fill="#B52F3D" opacity=".28"/>
+  <!-- syal -->
+  <path d="M168 232c34 20 78 22 116 4-4 18-10 28-18 36-30 12-64 8-92-8-4-10-6-20-6-32Z" fill="#D9A441"/>
+  <path d="M236 268l14 44-26-10Z" fill="#B52F3D"/>
+</svg>
