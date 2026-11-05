@@ -95,6 +95,15 @@ Tiga kelengkapan yang diserahkan warga ke desa/kelurahan, lalu diunggah Operator
 
 Dokumen saat pencairan (KTP asli, KK, surat undangan, surat kuasa) tetap dicantumkan terpisah agar tidak tertukar dengan dokumen pengajuan.
 
+## Data resmi yang sudah dipakai (tahun anggaran 2026)
+
+- Tahap I: 1.266 KPM · Tahap II: 985 KPM (total 2.251 KPM).
+- Asumsi nilai bantuan Rp 2.000.000 per KPM (total Rp 4.502.000.000).
+- Lokus: 285 desa/kelurahan di 6 kabupaten.
+- Status penyaluran: masih berproses di BPKAD.
+
+Angka tersebut tercatat di `data/informasi.json` (`periode`, `jadwal`, `pengumuman`). Ubah bila ada pemutakhiran.
+
 ## Wajib diganti sebelum publikasi
 
 1. `data/informasi.json` — angka, jadwal, nomor telepon (`XXXX`), email, alamat.

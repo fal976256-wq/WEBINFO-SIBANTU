@@ -144,7 +144,7 @@
       var pct = Math.max(0, Math.min(100, Math.round((p.tersalurkan / p.kuota) * 100)));
       bar.style.width = pct + '%';
       var lbl = document.querySelector('[data-progress-label]');
-      if (lbl) lbl.textContent = pct + '% tersalurkan';
+      if (lbl) lbl.textContent = (p.tersalurkan && p.tersalurkan > 0) ? pct + '% tersalurkan' : 'Dalam proses di BPKAD';
     }
     document.querySelectorAll('[data-status-chip]').forEach(function (el) { el.textContent = p.status || 'Berlangsung'; });
     var draft = document.querySelector('[data-draft]');
@@ -288,7 +288,9 @@
     var kelas = { selesai: 'chip--green', berlangsung: 'chip', mendatang: 'chip--gold' };
     body.innerHTML = data.jadwal.map(function (j) {
       var k = j.status || 'mendatang';
-      return '<tr><td><strong>' + esc(j.tahap) + '</strong></td><td>' + esc(tanggal(j.mulai)) + '</td><td>' + esc(tanggal(j.selesai)) +
+      var penerima = (j.penerima !== undefined) ? '<td class="tnum">' + angka(j.penerima) + '</td>' : '<td>-</td>';
+      return '<tr><td><strong>' + esc(j.tahap) + '</strong></td>' + penerima +
+        '<td>' + esc(tanggal(j.mulai)) + '</td><td>' + esc(tanggal(j.selesai)) +
         '</td><td><span class="chip ' + (kelas[k] || 'chip') + '">' + esc(label[k] || k) + '</span></td></tr>';
     }).join('');
   }

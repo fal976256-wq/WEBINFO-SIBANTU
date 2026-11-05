@@ -142,16 +142,16 @@
               </div>
               <div class="status-card">
                 <p class="row-label mb-1">Status penyaluran</p>
-                <p class="periode mb-1"><span data-bind="periode.tahap">Tahap III</span> · <span data-bind="periode.tahun">2026</span></p>
+                <p class="periode mb-1"><span data-bind="periode.tahap">Tahap I–II</span> · <span data-bind="periode.tahun">2026</span></p>
                 <div class="status-meta">
-                  <span><i class="bi bi-calendar3 me-1" aria-hidden="true"></i><span data-bind="periode.mulai" data-format="tanggal">20 Oktober 2026</span> – <span data-bind="periode.selesai" data-format="tanggal">28 November 2026</span></span>
-                  <span class="chip chip--green" data-status-chip>Berlangsung</span>
+                  <span><i class="bi bi-geo-alt me-1" aria-hidden="true"></i><span data-bind="periode.desaLokus" data-format="angka">285</span> desa/kelurahan · <span data-bind="periode.kabupaten">6</span> kabupaten</span>
+                  <span class="chip" data-status-chip>Berproses di BPKAD</span>
                 </div>
-                <div class="status-bar" role="progressbar" aria-label="Progres penyaluran" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78"><span data-progress style="width:78%"></span></div>
+                <div class="status-bar" role="progressbar" aria-label="Progres penyaluran" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span data-progress style="width:0%"></span></div>
                 <p class="mb-0 mt-2" style="font-size:.82rem;color:var(--muted);">
-                  <span data-bind="periode.tersalurkan" data-format="angka">9.875</span> dari
-                  <span data-bind="periode.kuota" data-format="angka">12.640</span> <span data-bind="periode.satuan">KK</span> ·
-                  <span data-progress-label>78% tersalurkan</span>
+                  <span data-bind="periode.tersalurkan" data-format="angka">0</span> dari
+                  <span data-bind="periode.kuota" data-format="angka">2.251</span> <span data-bind="periode.satuan">KPM</span> ·
+                  <span data-progress-label>Dalam proses di BPKAD</span>
                 </p>
               </div>
             </div>
@@ -201,13 +201,13 @@
               <div class="col-6">
                 <div class="panel h-100">
                   <p class="panel-head mb-2">Tahap berjalan</p>
-                  <p class="mb-0 font-display" style="font-family:var(--font-display);font-weight:800;color:var(--navy);font-size:1.1rem;"><span data-bind="periode.tahap">Tahap III</span> · <span data-bind="periode.tahun">2026</span></p>
+                  <p class="mb-0 font-display" style="font-family:var(--font-display);font-weight:800;color:var(--navy);font-size:1.1rem;"><span data-bind="periode.tahap">Tahap I–II</span> · <span data-bind="periode.tahun">2026</span></p>
                 </div>
               </div>
               <div class="col-6">
                 <div class="panel h-100">
-                  <p class="panel-head mb-2">Penerima tahap ini</p>
-                  <p class="mb-0 tnum" style="font-family:var(--font-display);font-weight:800;color:var(--navy);font-size:1.1rem;"><span data-bind="periode.kuota" data-format="angka">12.640</span> KK</p>
+                  <p class="panel-head mb-2">Total penerima</p>
+                  <p class="mb-0 tnum" style="font-family:var(--font-display);font-weight:800;color:var(--navy);font-size:1.1rem;"><span data-bind="periode.kuota" data-format="angka">2.251</span> KPM</p>
                 </div>
               </div>
             </div>

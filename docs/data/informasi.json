@@ -13,16 +13,20 @@
     "wilayah": "Provinsi Sulawesi Barat"
   },
   "periode": {
-    "tahap": "Tahap III",
+    "tahap": "Tahap I–II",
     "tahun": 2026,
-    "status": "Berlangsung",
+    "status": "Berproses di BPKAD",
     "statusKode": "berlangsung",
-    "mulai": "2026-10-20",
-    "selesai": "2026-11-28",
-    "kuota": 12640,
-    "tersalurkan": 9875,
-    "satuan": "KK",
-    "catatan": "Pencairan dilakukan bertahap per kabupaten sesuai jadwal undangan."
+    "mulai": "2026-01-01",
+    "selesai": "2026-12-31",
+    "kuota": 2251,
+    "tersalurkan": 0,
+    "satuan": "KPM",
+    "catatan": "Penyaluran tahun anggaran 2026 masih berproses di BPKAD. Asumsi nilai bantuan Rp 2.000.000 per KPM.",
+    "nilaiPerKpm": 2000000,
+    "totalNilai": 4502000000,
+    "desaLokus": 285,
+    "kabupaten": 6
   },
   "nilai": [
     {
@@ -51,6 +55,14 @@
     }
   ],
   "pengumuman": [
+    {
+      "id": "p-2026-11-06",
+      "tanggal": "2026-11-06",
+      "kategori": "Jadwal",
+      "penting": true,
+      "judul": "Penyaluran tahun anggaran 2026 masih berproses di BPKAD",
+      "isi": "Tahap I mencakup 1.266 KPM dan Tahap II 985 KPM dari 285 desa/kelurahan di 6 kabupaten. Asumsi nilai bantuan Rp 2.000.000 per KPM (total Rp 4.502.000.000). Penyaluran dilakukan setelah proses administrasi di BPKAD selesai."
+    },
     {
       "id": "p-2026-11-01",
       "tanggal": "2026-11-01",
@@ -89,19 +101,15 @@
       "tahap": "Tahap I",
       "mulai": "2026-02-16",
       "selesai": "2026-03-20",
-      "status": "selesai"
+      "status": "berlangsung",
+      "penerima": 1266
     },
     {
       "tahap": "Tahap II",
       "mulai": "2026-06-08",
       "selesai": "2026-07-10",
-      "status": "selesai"
-    },
-    {
-      "tahap": "Tahap III",
-      "mulai": "2026-10-20",
-      "selesai": "2026-11-28",
-      "status": "berlangsung"
+      "status": "mendatang",
+      "penerima": 985
     }
   ],
   "programBantuan": [
