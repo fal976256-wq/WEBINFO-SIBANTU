@@ -95,6 +95,16 @@ Tiga kelengkapan yang diserahkan warga ke desa/kelurahan, lalu diunggah Operator
 
 Dokumen saat pencairan (KTP asli, KK, surat undangan, surat kuasa) tetap dicantumkan terpisah agar tidak tertukar dengan dokumen pengajuan.
 
+## Dokumen pengajuan (halaman Persyaratan)
+
+Tiga kelengkapan yang diserahkan warga ke desa/kelurahan, lalu diunggah Operator SIBANTU:
+
+1. Fotokopi atau asli KTP dan KK.
+2. Pakta Integritas sesuai form yang disediakan desa/kelurahan (contoh format: `aset/form/pakta-integritas.docx`).
+3. Tangkapan layar Desil dari pengecekan resmi: `cekbansos.kemensos.go.id`, aplikasi Cek Bansos (Play Store), atau SIKS-NG di desa/kelurahan.
+
+Pencairan bantuan murni Rp 0 — termasuk pembukaan rekening dan seluruh administrasi. Pernyataan ini ditegaskan di Persyaratan, Alur, Pengumuman, Sosialisasi, Berita, dan Kontak.
+
 ## Data resmi yang sudah dipakai (tahun anggaran 2026)
 
 - Tahap I: 1.266 KPM · Tahap II: 985 KPM (total 2.251 KPM).
