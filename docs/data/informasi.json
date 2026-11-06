@@ -150,7 +150,8 @@
         "Dalam sosialisasi, warga menerima penjelasan mengenai dokumen yang harus disiapkan, mekanisme musyawarah, serta cara menyampaikan keberatan bila merasa memenuhi kriteria tetapi belum tercatat.",
         "Perangkat desa juga dilatih menggunakan aplikasi SIBANTU untuk mengunggah data calon penerima beserta Surat Pernyataan Tanggung Jawab Mutlak (SPTJM) kolektif dari kepala desa.",
         "Kegiatan serupa dijadwalkan berlanjut ke kabupaten lain sebelum periode pengusulan tahap berikutnya dibuka."
-      ]
+      ],
+      "foto": "aset/galeri/sosialisasi-di-kelurahan-mambi-mamasa.webp"
     },
     {
       "id": "verifikasi-bap",
@@ -163,7 +164,8 @@
         "Setelah seluruh data dalam satu desa/kelurahan disetujui, dinas sosial kabupaten menyusun Berita Acara Pemeriksaan (BAP) dan meneruskannya kepada provinsi.",
         "Provinsi selanjutnya melakukan rekonsiliasi data dengan kabupaten/kota serta verifikasi ulang identitas sebelum penerima ditetapkan.",
         "Data yang belum lolos verifikasi dikembalikan ke operator desa untuk diperbaiki melalui aplikasi SIBANTU."
-      ]
+      ],
+      "foto": "aset/galeri/pencetakan-bap-kab-polman.webp"
     },
     {
       "id": "pencairan-tahap-3",
@@ -175,7 +177,8 @@
         "Pencairan bantuan sosial tunai Tahap III tahun anggaran 2026 dimulai pada 20 Oktober dan dijadwalkan selesai 28 November 2026. Kuota tahap ini tercatat 12.640 keluarga penerima.",
         "Penerima diharap hadir sesuai tanggal dan lokasi pada surat undangan, dengan membawa KTP, KK, dan surat undangan asli. Penerima yang berhalangan dapat diwakilkan dengan surat kuasa.",
         "Petugas menegaskan bahwa seluruh proses pencairan tidak dipungut biaya. Warga diminta melaporkan setiap permintaan uang kepada helpdesk dinas sosial."
-      ]
+      ],
+      "foto": "aset/galeri/pembukaan-rekening-di-kab-pasangkayu.webp"
     },
     {
       "id": "layanan-lansia",
@@ -187,7 +190,8 @@
         "Untuk memastikan layanan inklusif, titik penyaluran menyediakan loket khusus bagi penerima lanjut usia dan penyandang disabilitas, lengkap dengan kursi tunggu dan pendampingan petugas.",
         "Keluarga dapat mengajukan pendampingan melalui desa/kelurahan sebelum tanggal penyaluran agar petugas menyiapkan jalur prioritas.",
         "Layanan ini merupakan bagian dari nilai pelayanan SIBANTU: inklusif dan ramah bagi seluruh warga."
-      ]
+      ],
+      "foto": "aset/galeri/pendampingan-pembukaan-rekening-kab-mamasa.webp"
     },
     {
       "id": "transparansi-laporan",
@@ -199,7 +203,8 @@
         "Dinas Sosial Provinsi Sulawesi Barat mempublikasikan ringkasan realisasi penyaluran Tahap II sebagai bagian dari komitmen keterbukaan informasi.",
         "Ringkasan memuat jumlah penerima yang telah dicairkan, sisa kuota, serta jumlah penerima yang dijadwalkan ulang karena berhalangan hadir atau dokumen belum lengkap.",
         "Publikasi ini diperbarui setiap tahap. Data rinci per penerima tidak dipublikasikan demi perlindungan data pribadi."
-      ]
+      ],
+      "foto": "aset/galeri/pembahasan-modul-dan-sop-sibantu.webp"
     }
   ],
   "sosialisasi": [
@@ -230,40 +235,101 @@
   ],
   "galeri": [
     {
-      "judul": "Sosialisasi warga",
-      "keterangan": "Rapat sosialisasi kriteria penerima di tingkat desa.",
+      "judul": "Kabid Menerima KUnjungan koordinasi BPKP",
+      "keterangan": "Koordinasi BPKP · dokumentasi kegiatan SIBANTU.",
       "tanggal": "2026-11-03",
-      "foto": ""
+      "foto": "aset/galeri/kabid-menerima-kunjungan-koordinasi-bpkp.webp"
     },
     {
-      "judul": "Musyawarah desa",
-      "keterangan": "Penetapan calon penerima melalui musyawarah desa.",
+      "judul": "Kegiatan Proper Perubahan SIBANTU",
+      "keterangan": "Perumusan sistem · dokumentasi kegiatan SIBANTU.",
       "tanggal": "2026-10-27",
-      "foto": ""
+      "foto": "aset/galeri/kegiatan-proper-perubahan-sibantu.webp"
     },
     {
-      "judul": "Verifikasi dokumen",
-      "keterangan": "Pemeriksaan kelengkapan berkas oleh operator.",
+      "judul": "Kegiatan Proper Perubahan",
+      "keterangan": "Perumusan sistem · dokumentasi kegiatan SIBANTU.",
       "tanggal": "2026-10-22",
-      "foto": ""
+      "foto": "aset/galeri/kegiatan-proper-perubahan.webp"
     },
     {
-      "judul": "Pencairan tahap III",
-      "keterangan": "Pelayanan penerima di titik penyaluran kabupaten.",
+      "judul": "Pelatihan dan Uji coba SIBANTU di Kab Pasangkayu",
+      "keterangan": "Pelatihan · dokumentasi kegiatan SIBANTU.",
       "tanggal": "2026-10-20",
-      "foto": ""
+      "foto": "aset/galeri/pelatihan-dan-uji-coba-sibantu-di-kab-pasangkayu.webp"
     },
     {
-      "judul": "Loket prioritas",
-      "keterangan": "Pendampingan penerima lanjut usia dan disabilitas.",
+      "judul": "Pembahasan Modul dan SOP SIbantu",
+      "keterangan": "Perumusan sistem · dokumentasi kegiatan SIBANTU.",
+      "tanggal": "2026-10-15",
+      "foto": "aset/galeri/pembahasan-modul-dan-sop-sibantu.webp"
+    },
+    {
+      "judul": "Pembukaan Rekening Kab Mamuju",
+      "keterangan": "Pembukaan rekening · dokumentasi kegiatan SIBANTU.",
       "tanggal": "2026-10-08",
-      "foto": ""
+      "foto": "aset/galeri/pembukaan-rekening-kab-mamuju.webp"
     },
     {
-      "judul": "Edukasi anti-pungli",
-      "keterangan": "Penyuluhan pencegahan pungutan liar di kantor desa.",
-      "tanggal": "2026-09-30",
-      "foto": ""
+      "judul": "Pembukaan Rekening Kab Mateng",
+      "keterangan": "Pembukaan rekening · dokumentasi kegiatan SIBANTU.",
+      "tanggal": "2026-10-01",
+      "foto": "aset/galeri/pembukaan-rekening-kab-mateng.webp"
+    },
+    {
+      "judul": "Pembukaan Rekening di Kab Pasangkayu",
+      "keterangan": "Pembukaan rekening · dokumentasi kegiatan SIBANTU.",
+      "tanggal": "2026-09-28",
+      "foto": "aset/galeri/pembukaan-rekening-di-kab-pasangkayu.webp"
+    },
+    {
+      "judul": "Pembukaan Rekening di Kecamatan Tappalang",
+      "keterangan": "Pembukaan rekening · dokumentasi kegiatan SIBANTU.",
+      "tanggal": "2026-09-22",
+      "foto": "aset/galeri/pembukaan-rekening-di-kecamatan-tappalang.webp"
+    },
+    {
+      "judul": "Pencetakan BAP Kab Polman",
+      "keterangan": "Verifikasi & BAP · dokumentasi kegiatan SIBANTU.",
+      "tanggal": "2026-09-15",
+      "foto": "aset/galeri/pencetakan-bap-kab-polman.webp"
+    },
+    {
+      "judul": "Pendampingan Pebukaan Rekening Kab Majene",
+      "keterangan": "Pembukaan rekening · dokumentasi kegiatan SIBANTU.",
+      "tanggal": "2026-09-08",
+      "foto": "aset/galeri/pendampingan-pebukaan-rekening-kab-majene.webp"
+    },
+    {
+      "judul": "Pendampingan Pembukaan Rekening Kab Mamasa",
+      "keterangan": "Pembukaan rekening · dokumentasi kegiatan SIBANTU.",
+      "tanggal": "2026-09-01",
+      "foto": "aset/galeri/pendampingan-pembukaan-rekening-kab-mamasa.webp"
+    },
+    {
+      "judul": "Pendampingan Penginputan SIBANTU desa Salumokanan",
+      "keterangan": "Pendampingan · dokumentasi kegiatan SIBANTU.",
+      "tanggal": "2026-08-25",
+      "foto": "aset/galeri/pendampingan-penginputan-sibantu-desa-salumokanan.webp"
+    },
+    {
+      "judul": "Perumusan SIBANTU keg Proper",
+      "keterangan": "Video kegiatan: Perumusan sistem.",
+      "tanggal": "2026-08-18",
+      "foto": "",
+      "video": "aset/galeri/perumusan-sibantu-keg-proper.mp4"
+    },
+    {
+      "judul": "Sosialisasi di Kelurahan Mambi, Mamasa",
+      "keterangan": "Sosialisasi · dokumentasi kegiatan SIBANTU.",
+      "tanggal": "2026-08-11",
+      "foto": "aset/galeri/sosialisasi-di-kelurahan-mambi-mamasa.webp"
+    },
+    {
+      "judul": "sosialisasi pembukaan rekening Kab Mamuju Tengah",
+      "keterangan": "Pembukaan rekening · dokumentasi kegiatan SIBANTU.",
+      "tanggal": "2026-08-04",
+      "foto": "aset/galeri/sosialisasi-pembukaan-rekening-kab-mamuju-tengah.webp"
     }
   ],
   "transparansi": {

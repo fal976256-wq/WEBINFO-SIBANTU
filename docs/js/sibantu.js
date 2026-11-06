@@ -26,6 +26,7 @@
     return path.split('.').reduce(function (o, k) { return o && o[k] !== undefined ? o[k] : null; }, data);
   }
   function thumb(item) {
+    if (item && item.video) return '<video src="' + esc(item.video) + '" controls preload="metadata" playsinline style="width:100%;height:100%;object-fit:cover"></video>';
     if (item && item.foto) return '<img src="' + esc(item.foto) + '" alt="" loading="lazy">';
     return '<span class="placeholder-art">Dokumentasi SIBANTU</span>';
   }
@@ -239,6 +240,8 @@
     if (meta) meta.innerHTML = '<span class="chip">' + esc(b.kategori) + '</span><span>' + esc(tanggal(b.tanggal)) + '</span><span>Dinas Sosial Provinsi Sulawesi Barat</span>';
     host.innerHTML = '<p class="lead">' + esc(b.ringkas) + '</p>' +
       b.isi.map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('');
+    var hero = document.getElementById('heroBerita');
+    if (hero) hero.innerHTML = thumb(b) + '<span class="caption">Dokumentasi kegiatan</span>';
     var lain = document.getElementById('beritaLain');
     if (lain) {
       lain.innerHTML = data.berita.filter(function (x) { return x.id !== b.id; }).slice(0, 3).map(function (x) {

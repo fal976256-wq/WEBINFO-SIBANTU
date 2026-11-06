@@ -81,7 +81,7 @@ Tanggal `YYYY-MM-DD`; angka diformat `id-ID` otomatis.
 
 ### Foto & maskot
 
-- **Foto belum tersedia.** Kotak `.media`/`.thumb`/`.gallery` menampilkan penanda "Dokumentasi SIBANTU" selama `foto` kosong. Letakkan foto asli (rasio 16:10 atau 4:3, lebar 1200 px, WebP) lalu isi `foto`.
+- **Foto kegiatan sudah tersedia** (15 foto + 1 video) di `aset/galeri/`. Field `foto`/`video` pada JSON sudah terisi; kotak placeholder hanya tampil bila kosong.
 - **Logo** `aset/logo-sibantu.webp` dipakai di navbar, panel hero (di atas kartu status), footer, favicon, dan halaman Profil. `aset/logo-pemda.webp` tampil di topbar, footer, dan Profil.
 - **Maskot** `aset/maskot-sibantu.svg` adalah ilustrasi sementara buatan sendiri, hanya dipakai di bagian sosialisasi dan edukasi. Ganti dengan berkas maskot resmi bila sudah ada.
 
