@@ -238,7 +238,7 @@
     var crumb = document.getElementById('crumbBerita');
     if (crumb) crumb.textContent = b.judul;
     var meta = document.getElementById('metaBerita');
-    if (meta) meta.innerHTML = '<span class="chip">' + esc(b.kategori) + '</span><span>' + esc(tanggal(b.tanggal)) + '</span><span>Dinas Sosial Provinsi Sulawesi Barat</span>';
+    if (meta) meta.innerHTML = '<span class="chip">' + esc(b.kategori) + '</span><span>' + esc(tanggal(b.tanggal)) + '</span><span>Dinas Sosial Pemberdayaan Perempuan dan Perlindungan Anak serta Pemberdayaan Masyarakat Desa Provinsi Sulawesi Barat</span>';
     host.innerHTML = '<p class="lead">' + esc(b.ringkas) + '</p>' +
       b.isi.map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('');
     var hero = document.getElementById('heroBerita');

@@ -1,6 +1,6 @@
 # SIBANTU — Portal Informasi Bantuan Sosial Terpadu
 
-Situs statis 12 halaman untuk Dinas Sosial Provinsi Sulawesi Barat. Tanpa database dan tanpa build step: HTML + Bootstrap 5 (CDN) + satu file JSON.
+Situs statis 12 halaman untuk Dinas Sosial Pemberdayaan Perempuan dan Perlindungan Anak serta Pemberdayaan Masyarakat Desa Provinsi Sulawesi Barat. Tanpa database dan tanpa build step: HTML + Bootstrap 5 (CDN) + satu file JSON.
 
 Redesign mengikuti identitas logo resmi: royal blue, navy, ivory, aksen merah & gold.
 

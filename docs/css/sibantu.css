@@ -132,12 +132,15 @@ a:hover { color: var(--navy); }
   font-weight: 600;
   font-size: 0.95rem;
   border-radius: var(--r-pill);
-  padding: 0.8rem 1.5rem;
+  padding: 0.75rem 1.5rem;
+  min-height: 44px;
   transition: transform 0.18s ease, background-color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
   border: 1px solid transparent;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 .btn:active { transform: translateY(1px); }
 
@@ -163,11 +166,15 @@ a:hover { color: var(--navy); }
 .link-arrow--light:hover { color: var(--gold); }
 
 /* ---------- TOPBAR + NAV ---------- */
-.topbar { background: var(--navy); color: rgba(255,255,255,0.82); font-size: 0.82rem; padding: 0.45rem 0; }
-.topbar .inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-.topbar a { color: rgba(255,255,255,0.82); display: inline-flex; align-items: center; gap: .25rem; min-height: 32px; }
+.topbar { background: var(--navy); color: rgba(255,255,255,0.92); font-size: 0.82rem; padding: 0.5rem 0; line-height: 1.4; }
+.topbar .inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.topbar a { color: rgba(255,255,255,0.92); display: inline-flex; align-items: center; gap: .25rem; min-height: 36px; transition: color 0.18s ease; }
 .topbar a:hover { color: #fff; }
-.topbar .instansi { display: inline-flex; align-items: center; gap: 0.5rem; }
+.topbar .instansi { display: inline-flex; align-items: center; gap: 0.6rem; font-weight: 500; }
+@media (max-width: 575.98px) {
+  .topbar { font-size: 0.76rem; }
+  .topbar .instansi { line-height: 1.35; }
+}
 .topbar-logo { height: 24px; width: auto; background: #fff; border-radius: 3px; padding: 1px; }
 
 .nav-wrap { position: sticky; top: 0; z-index: 1030; }
@@ -188,10 +195,11 @@ a:hover { color: var(--navy); }
 .nav-links { display: flex; align-items: center; gap: 0.15rem; margin-left: auto; }
 .nav-links > .item > a, .dd > summary {
   display: inline-flex; align-items: center; gap: 0.35rem;
+  min-height: 44px;
   font-family: var(--font-display); font-weight: 600; font-size: 0.9rem;
   color: var(--blue); background: none; border: 0;
-  padding: 0.55rem 0.7rem; border-radius: var(--r-sm);
-  transition: background-color 0.15s ease, color 0.15s ease;
+  padding: 0.5rem 0.75rem; border-radius: var(--r-sm);
+  transition: background-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
   white-space: nowrap;
 }
 .nav-links > .item > a:hover, .dd > summary:hover { background: var(--sky-tint); color: var(--navy); }
@@ -212,7 +220,7 @@ a:hover { color: var(--navy); }
 .dd-panel a span { display: block; font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
 
 .icon-btn {
-  width: 42px; height: 42px; border-radius: 50%;
+  width: 44px; height: 44px; border-radius: 50%;
   border: 1px solid var(--line); background: #fff; color: var(--navy);
   display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
@@ -232,7 +240,7 @@ a:hover { color: var(--navy); }
 .mobile-panel { display: none; border-top: 1px solid var(--line); background: #fff; padding: 0.5rem 0 1rem; }
 .mobile-panel.show { display: block; }
 .mobile-panel > a, .mobile-panel summary {
-  display: block; padding: 0.7rem 0.25rem;
+  display: flex; align-items: center; min-height: 44px; padding: 0.75rem 0.5rem;
   font-family: var(--font-display); font-weight: 600; font-size: 0.98rem;
   color: var(--navy); border-bottom: 1px solid var(--line);
 }
@@ -512,7 +520,13 @@ a:hover { color: var(--navy); }
 }
 .table-clean td { padding: 0.8rem 0.7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
 .table-clean tbody tr:last-child td { border-bottom: 0; }
-.table-wrap { overflow-x: auto; }
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--line);
+  background: #fff;
+}
 
 /* ---------- BAND ---------- */
 .band {
@@ -596,17 +610,17 @@ a:hover { color: var(--navy); }
   font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: block;
 }
-.footer a { display: flex; align-items: center; min-height: 40px; color: rgba(255,255,255,0.72); font-size: 0.94rem; margin-bottom: 0.15rem; }
+.footer a { display: flex; align-items: center; min-height: 44px; color: rgba(255,255,255,0.85); font-size: 0.94rem; margin-bottom: 0.15rem; transition: color 0.18s ease; }
 .footer a:hover { color: #fff; }
 .footer .brand img { background: #fff; border-radius: var(--r-sm); padding: 6px; height: 58px; }
 .footer .brand-name { color: #fff; }
 .footer .brand small { color: rgba(255,255,255,0.6); }
 .footer .contact-line { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.94rem; margin-bottom: 0.6rem; }
-.footer .contact-line i { color: rgba(255,255,255,0.45); margin-top: 0.2rem; }
+.footer .contact-line i { color: var(--gold); margin-top: 0.2rem; font-size: 1.05rem; flex-shrink: 0; }
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.12);
   margin-top: 2.5rem; padding: 1.15rem 0;
-  font-size: 0.85rem; color: rgba(255,255,255,0.55);
+  font-size: 0.85rem; color: rgba(255,255,255,0.80);
 }
 .footer-bottom .logo-pemda { height: 40px; width: auto; background: #fff; border-radius: 6px; padding: 4px; }
 
@@ -631,7 +645,7 @@ a:hover { color: var(--navy); }
 
 .toc { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .toc a {
-  display: inline-flex; align-items: center; min-height: 38px;
+  display: inline-flex; align-items: center; min-height: 44px;
   font-family: var(--font-display); font-size: 0.82rem; font-weight: 600;
   color: var(--blue); border: 1px solid var(--line-blue);
   padding: 0.35rem 0.85rem; border-radius: var(--r-pill);
