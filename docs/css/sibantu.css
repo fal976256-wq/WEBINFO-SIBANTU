@@ -678,3 +678,63 @@ a:hover { color: var(--navy); }
   .page-head { border: 0; }
 }
 
+
+/* ---------- IKON PROFESIONAL & MODERN ---------- */
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--sky-tint);
+  color: var(--blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+.icon-circle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(21, 91, 145, 0.16);
+}
+.icon-circle--navy { background: var(--navy); color: #fff; }
+.icon-circle--gold { background: rgba(217, 164, 65, 0.16); color: var(--gold-ink); }
+.icon-circle--red { background: rgba(181, 47, 61, 0.12); color: var(--red); }
+.icon-circle--green { background: rgba(31, 157, 99, 0.12); color: #156943; }
+.icon-circle--sm { width: 38px; height: 38px; border-radius: 10px; font-size: 1.05rem; }
+.icon-circle--lg { width: 60px; height: 60px; border-radius: 18px; font-size: 1.65rem; }
+
+.card .icon-circle { margin-bottom: 1rem; }
+
+.kicker i {
+  font-size: 0.95em;
+  margin-right: 0.3rem;
+  vertical-align: -1px;
+}
+
+.table-clean td .wa-icon {
+  color: #25D366;
+  font-size: 1rem;
+  margin-right: 0.35rem;
+  vertical-align: -1px;
+}
+
+.step-actor i {
+  margin-right: 0.3rem;
+  vertical-align: -1px;
+}
+
+.accordion-clean .accordion-button i {
+  color: var(--blue);
+  margin-right: 0.65rem;
+  font-size: 1.1rem;
+  vertical-align: -1px;
+}
+
+.rail-num {
+  box-shadow: 0 2px 8px rgba(16, 47, 85, 0.08);
+}
+.rail-num i {
+  font-size: 1.15rem;
+  margin-bottom: 0;
+}

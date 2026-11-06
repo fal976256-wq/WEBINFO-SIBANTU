@@ -164,8 +164,9 @@
     if (!host || !data.nilai) return;
     host.innerHTML = data.nilai.map(function (n, i) {
       return '<div class="value reveal">' +
-        '<div class="d-flex justify-content-between align-items-start">' +
-        '<span class="num">0' + (i + 1) + '</span><i class="bi bi-' + esc(n.ikon) + ' ic" aria-hidden="true"></i></div>' +
+        '<div class="d-flex justify-content-between align-items-start mb-3">' +
+        '<span class="num">0' + (i + 1) + '</span>' +
+        '<div class="icon-circle icon-circle--sm"><i class="bi bi-' + esc(n.ikon) + '" aria-hidden="true"></i></div></div>' +
         '<h3>' + esc(n.judul) + '</h3><p><strong>' + esc(n.sub) + '</strong><br>' + esc(n.teks) + '</p></div>';
     }).join('');
   }
@@ -255,9 +256,16 @@
   function program(data) {
     var host = document.querySelector('[data-program]');
     if (!host || !data.programBantuan) return;
+    var iconMap = {
+      'bst': 'bi-cash-stack',
+      'pendampingan': 'bi-people-fill',
+      'edukasi': 'bi-megaphone-fill'
+    };
     host.innerHTML = data.programBantuan.map(function (p) {
+      var ic = iconMap[p.id] || 'bi-box-seam';
       return '<div class="card reveal"><div class="d-flex justify-content-between align-items-start mb-2">' +
-        '<i class="bi bi-box-seam ic" aria-hidden="true"></i><span class="chip chip--green">' + esc(p.status) + '</span></div>' +
+        '<div class="icon-circle"><i class="bi ' + ic + '" aria-hidden="true"></i></div>' +
+        '<span class="chip chip--green">' + esc(p.status) + '</span></div>' +
         '<h3>' + esc(p.nama) + '</h3><p>' + esc(p.ringkas) + '</p>' +
         '<hr class="hairline my-3"><p style="font-size:.88rem;margin:0"><strong>Sasaran.</strong> ' + esc(p.sasaran) + '</p>' +
         '<p style="font-size:.88rem;margin:.5rem 0 0"><strong>Manfaat.</strong> ' + esc(p.manfaat) + '</p></div>';
