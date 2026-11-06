@@ -117,7 +117,7 @@
       "id": "bst",
       "nama": "Bantuan Sosial Tunai (BST)",
       "ringkas": "Bantuan uang tunai per tahap untuk keluarga penerima manfaat yang telah ditetapkan.",
-      "sasaran": "Keluarga miskin dan rentan yang terdaftar dalam DTKS dan lolos verifikasi berjenjang.",
+      "sasaran": "Individu/keluarga miskin ekstrem dan miskin lainnya dalam DTSEN (Desil 1–2), bukan penerima PKH/BPNT APBN, bukan ASN/TNI/Polri/BUMN/aparat desa, dan lolos verifikasi berjenjang.",
       "manfaat": "Dana bantuan disalurkan langsung kepada penerima melalui bank/pos penyalur, tanpa potongan.",
       "status": "Berjalan"
     },
