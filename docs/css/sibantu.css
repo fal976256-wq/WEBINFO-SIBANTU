@@ -107,6 +107,7 @@ a:hover { color: var(--navy); }
 .hairline { height: 1px; background: var(--line); border: 0; margin: 0; }
 
 .section { padding-top: var(--space); padding-bottom: var(--space); }
+.section-tight { padding-top: clamp(2.5rem, 4vw, 3.5rem); padding-bottom: clamp(2.5rem, 4vw, 3.5rem); }
 .section-sm { padding-top: clamp(2.5rem, 4vw, 3.5rem); padding-bottom: clamp(2.5rem, 4vw, 3.5rem); }
 
 .kicker {
