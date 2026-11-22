@@ -267,6 +267,7 @@
         '<div class="icon-circle"><i class="bi ' + ic + '" aria-hidden="true"></i></div>' +
         '<span class="chip chip--green">' + esc(p.status) + '</span></div>' +
         '<h3>' + esc(p.nama) + '</h3><p>' + esc(p.ringkas) + '</p>' +
+        (p.deskripsi ? '<p style="font-size:.92rem;color:var(--ink-soft);margin:.5rem 0 1rem">' + esc(p.deskripsi) + '</p>' : '') +
         '<hr class="hairline my-3"><p style="font-size:.88rem;margin:0"><strong>Sasaran.</strong> ' + esc(p.sasaran) + '</p>' +
         '<p style="font-size:.88rem;margin:.5rem 0 0"><strong>Manfaat.</strong> ' + esc(p.manfaat) + '</p></div>';
     }).join('');

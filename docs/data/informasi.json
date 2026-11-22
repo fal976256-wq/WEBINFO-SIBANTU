@@ -119,7 +119,8 @@
       "ringkas": "Bantuan uang tunai per tahap untuk keluarga penerima manfaat yang telah ditetapkan.",
       "sasaran": "Individu/keluarga miskin ekstrem dan miskin lainnya dalam DTSEN (Desil 1–2), bukan penerima PKH/BPNT APBN, bukan ASN/TNI/Polri/BUMN/aparat desa, dan lolos verifikasi berjenjang.",
       "manfaat": "Dana bantuan disalurkan langsung kepada penerima melalui bank/pos penyalur, tanpa potongan.",
-      "status": "Berjalan"
+      "status": "Berjalan",
+      "deskripsi": "Bantuan Sosial Tunai (BST) adalah program bantuan sosial bersumber dari APBD yang menyasar individu dan keluarga miskin ekstrem serta miskin lainnya di Provinsi Sulawesi Barat. Dana bantuan disalurkan langsung kepada penerima melalui bank atau pos penyalur, tanpa potongan, tanpa biaya administrasi, dan tanpa pungutan liar. Besaran bantuan pada tahun anggaran 2026 adalah Rp 2.000.000 per KPM per tahap, disalurkan dalam dua tahap sesuai penjadwalan resmi. Penerima ditetapkan melalui proses verifikasi berjenjang: musyawarah desa, pengusulan oleh operator SIBANTU, verifikasi Dinas Sosial Kabupaten/Kota, rekonsiliasi Provinsi, dan penetapan oleh Gubernur. Seluruh proses dari pengusulan sampai pencairan murni gratis."
     },
     {
       "id": "pendampingan",
@@ -127,7 +128,8 @@
       "ringkas": "Pendampingan bagi penerima lanjut usia, penyandang disabilitas, dan warga terpencil.",
       "sasaran": "Penerima BST yang tidak dapat hadir sendiri ke lokasi penyaluran.",
       "manfaat": "Pendampingan pengurusan dokumen dan pengantaran ke lokasi penyaluran.",
-      "status": "Berjalan"
+      "status": "Berjalan",
+      "deskripsi": "Pendampingan Sosial disediakan bagi penerima BST yang tidak dapat hadir sendiri ke lokasi penyaluran karena kondisi lanjut usia, penyandang disabilitas, tinggal di daerah terpencil, atau alasan ketidakhadiran lainnya yang dapat dipertanggungjawabkan. Pendamping membantu pengurusan dokumen dan mengantar penerima ke titik penyaluran. Pendamping ditunjuk oleh desa/kelurahan dan wajib membuat surat keterangan. Pendamping tidak menggantikan penerima sebagai pemilik hak atas dana; dana tetap atas nama penerima."
     },
     {
       "id": "edukasi",
@@ -135,7 +137,8 @@
       "ringkas": "Kegiatan sosialisasi kriteria, alur, dan pencegahan pungutan liar di tingkat desa.",
       "sasaran": "Warga, perangkat desa, dan pendamping sosial di enam kabupaten.",
       "manfaat": "Warga memahami hak dan prosedur sehingga tidak bergantung pada perantara.",
-      "status": "Berjalan"
+      "status": "Berjalan",
+      "deskripsi": "Kegiatan edukasi dan sosialisasi dilaksanakan di tingkat desa/kelurahan untuk memastikan seluruh warga memahami kriteria calon penerima, dokumen yang dibutuhkan, alur pengusulan, dan cara melaporkan permintaan uang (pungli). Materi disiapkan Dinsos Provinsi untuk digunakan oleh kepala desa/lurah, perangkat desa, dan pendamping sosial di enam kabupaten. Sosialisasi merupakan bagian wajib dari alur pengusulan: kriteria harus disosialisasikan sebelum musyawarah desa dilakukan."
     }
   ],
   "berita": [
