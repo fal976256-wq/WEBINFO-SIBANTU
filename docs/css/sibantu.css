@@ -669,6 +669,12 @@ a:hover { color: var(--navy); }
 /* Tautan di permukaan gelap: jangan mewarisi hover navy (tak terlihat di navy). */
 .band a:not([class*="btn"]), .bg-navy a:not([class*="btn"]) { color: rgba(255,255,255,0.92); }
 .band a:not([class*="btn"]):hover, .bg-navy a:not([class*="btn"]):hover { color: var(--gold); }
+/* <strong> global berwarna navy — tidak terbaca di atas latar navy.
+   Semua teks tebal di permukaan gelap harus putih. */
+.band strong, .band b,
+.bg-navy strong, .bg-navy b,
+.section-dark strong, .section-dark b,
+.footer strong, .footer b { color: #fff; }
 
 /* Permukaan gelap penuh-lebar (band pengumuman/janji di beranda).
    Warna teks & tautan ditangani di sini supaya tidak perlu inline style —
