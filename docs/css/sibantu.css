@@ -189,6 +189,12 @@ a:hover { color: var(--navy); }
 .btn-gold-custom { background: var(--gold); color: #3A2A08; }
 .btn-gold-custom:hover { background: #C8932F; color: #2E2106; transform: translateY(-2px); }
 
+/* Tombol garis di atas permukaan gelap. Keadaan normal DAN hover ditulis di sini;
+   jangan pakai style inline color:#fff — inline menang atas :hover sehingga teks
+   jadi putih di atas latar terang saat kursor masuk. */
+.btn-ghost-light { border-color: rgba(255,255,255,0.55); border-width: 1.5px; color: #fff; background: rgba(255,255,255,0.07); }
+.btn-ghost-light:hover { border-color: #fff; background: rgba(255,255,255,0.16); color: #fff; transform: translateY(-2px); }
+
 .link-arrow {
   display: inline-flex; align-items: center; gap: 0.4rem; min-height: 32px; padding: 0.15rem 0;
   font-family: var(--font-display); font-weight: 600; font-size: 0.95rem;
@@ -226,7 +232,7 @@ a:hover { color: var(--navy); }
 
 .brand { display: inline-flex; align-items: center; gap: 0.6rem; flex-shrink: 0; }
 .brand img { height: 46px; width: auto; display: block; }
-.brand small { display: block; font-family: var(--font-body); font-size: 0.68rem; font-weight: 500; color: var(--muted); line-height: 1.25; }
+.brand small { display: block; font-family: var(--font-body); font-size: 0.72rem; font-weight: 500; color: var(--muted); line-height: 1.25; }
 .brand .brand-name { font-family: var(--font-display); font-size: 1.05rem; font-weight: 800; color: var(--navy); letter-spacing: 0.04em; line-height: 1.1; }
 
 .nav-links { display: flex; align-items: center; gap: 0.1rem; margin-left: auto; }
@@ -251,6 +257,12 @@ a:hover { color: var(--navy); }
 .nav-links > .item { position: relative; }
 
 .dd { position: relative; }
+/* Sub-halaman di dalam dropdown "Informasi" — tandai agar pengguna tahu posisinya. */
+.dd.active > summary { color: var(--navy); font-weight: 700; }
+.dd.active > summary::after {
+  content: ''; position: absolute; left: 0.75rem; right: 0.75rem; bottom: 0.2rem;
+  height: 2px; background: var(--gold); border-radius: 2px;
+}
 .dd[open] > summary { background: var(--sky-tint); color: var(--navy); }
 
 .dd-panel {
@@ -345,7 +357,7 @@ a:hover { color: var(--navy); }
 .hero-badge {
   display: inline-flex; align-items: center; gap: 0.5rem;
   background: #fff; border: 1px solid var(--line-blue); border-radius: var(--r-pill);
-  padding: 0.4rem 0.9rem 0.4rem 0.75rem; font-size: 0.82rem; color: var(--muted);
+  padding: 0.4rem 0.9rem 0.4rem 0.75rem; font-size: 0.84rem; color: var(--muted);
   margin-bottom: 1.1rem;
 }
 .hero-badge .pulse {
@@ -399,11 +411,15 @@ a:hover { color: var(--navy); }
 .ticker { background: var(--navy); color: #fff; font-size: 0.9rem; }
 .ticker .inner { display: flex; align-items: center; gap: 0.9rem; padding: 0.55rem 0; }
 .ticker .label {
-  flex-shrink: 0; font-family: var(--font-display); font-size: 0.68rem; font-weight: 700;
+  flex-shrink: 0; font-family: var(--font-display); font-size: 0.72rem; font-weight: 700;
   letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold);
   border: 1px solid rgba(217,164,65,0.5); padding: 0.15rem 0.5rem; border-radius: var(--r-xs);
 }
-.ticker .track { overflow: hidden; flex: 1; }
+.ticker .track {
+  overflow: hidden; flex: 1;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 28px, #000 calc(100% - 28px), transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 28px, #000 calc(100% - 28px), transparent 100%);
+}
 .ticker .track span { display: inline-block; white-space: nowrap; animation: ticker 46s linear infinite; color: rgba(255,255,255,0.9); }
 .ticker:hover .track span { animation-play-state: paused; }
 .ticker .track b { color: #fff; font-weight: 600; }
@@ -469,7 +485,7 @@ a:hover { color: var(--navy); }
 }
 .card-facts > div { display: grid; gap: 0.25rem; }
 .card-facts dt {
-  font-family: var(--font-display); font-size: 0.66rem; font-weight: 700;
+  font-family: var(--font-display); font-size: 0.72rem; font-weight: 700;
   letter-spacing: 0.11em; text-transform: uppercase; color: var(--blue);
 }
 .card-facts dd { margin: 0; font-size: 0.86rem; color: var(--muted); line-height: 1.6; }
@@ -540,7 +556,7 @@ a:hover { color: var(--navy); }
 .steps .step-detail { font-size: 0.92rem; color: var(--muted); }
 .step-actor {
   display: inline-block;
-  font-family: var(--font-display); font-size: 0.68rem; font-weight: 700;
+  font-family: var(--font-display); font-size: 0.72rem; font-weight: 700;
   letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--blue); background: var(--sky-tint);
   padding: 0.2rem 0.5rem; border-radius: var(--r-xs); margin-bottom: 0.5rem;
@@ -586,7 +602,7 @@ a:hover { color: var(--navy); }
 }
 .doc-list .doc-title { font-family: var(--font-display); font-weight: 700; color: var(--navy); display: block; margin-bottom: 0.15rem; }
 .doc-list .doc-note { font-size: 0.92rem; color: var(--muted); display: block; }
-.doc-list .doc-tag { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blue); white-space: nowrap; align-self: center; }
+.doc-list .doc-tag { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blue); white-space: nowrap; align-self: center; }
 
 .check-list { list-style: none; padding: 0; margin: 0; }
 .check-list li { display: flex; gap: 0.7rem; align-items: flex-start; padding: 0.5rem 0; font-size: 0.98rem; }
@@ -633,6 +649,21 @@ a:hover { color: var(--navy); }
 .band > * { position: relative; z-index: 1; }
 .band h2 { color: #fff; }
 .band p { color: rgba(255,255,255,0.84); }
+/* Tautan di permukaan gelap: jangan mewarisi hover navy (tak terlihat di navy). */
+.band a:not([class*="btn"]), .bg-navy a:not([class*="btn"]) { color: rgba(255,255,255,0.92); }
+.band a:not([class*="btn"]):hover, .bg-navy a:not([class*="btn"]):hover { color: var(--gold); }
+
+/* Permukaan gelap penuh-lebar (band pengumuman/janji di beranda).
+   Warna teks & tautan ditangani di sini supaya tidak perlu inline style —
+   inline style mengalahkan :hover dan bisa membuat teks tak terlihat. */
+.section-dark {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--blue-dark) 100%);
+  color: rgba(255,255,255,0.84);
+}
+.section-dark h2, .section-dark h3 { color: #fff; }
+.section-dark p { color: rgba(255,255,255,0.82); }
+.section-dark a:not([class*="btn"]) { color: rgba(255,255,255,0.92); }
+.section-dark a:not([class*="btn"]):hover { color: var(--gold); }
 
 .metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.75rem; }
 @media (min-width: 768px) { .metrics { grid-template-columns: repeat(4, 1fr); } }
@@ -746,8 +777,7 @@ a:hover { color: var(--navy); }
 .draft-banner {
   background: var(--warn-tint);
   border-bottom: 1px solid var(--warn-line);
-  border-left: 4px solid var(--gold);
-  color: #6B4E12; font-size: 0.84rem; padding: 0.5rem 0;
+  color: #6B4E12; font-size: 0.84rem; padding: 0.55rem 0;
 }
 .draft-banner i { margin-right: 0.35rem; color: var(--warn); }
 
