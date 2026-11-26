@@ -490,12 +490,19 @@ a:hover { color: var(--navy); }
 
 .news-list { border-top: 1px solid var(--line); }
 .news-item { display: grid; gap: 1.25rem; padding: 1.5rem 0; border-bottom: 1px solid var(--line); align-items: center; color: inherit; }
-@media (min-width: 768px) { .news-item { grid-template-columns: 220px 1fr; } }
+.news-item > * { min-width: 0; }
+@media (min-width: 768px) { .news-item { grid-template-columns: 220px minmax(0, 1fr); } }
 .news-item:hover { color: inherit; }
 .news-item:hover h3 { color: var(--blue); }
 .news-item .thumb { border-radius: var(--r-md); overflow: hidden; aspect-ratio: 16 / 10; background: linear-gradient(150deg, #E7EFF6, #F6F5F0); border: 1px solid var(--line); }
 .news-item h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
 .news-item p { color: var(--muted); font-size: 0.95rem; margin-bottom: 0.5rem; }
+
+/* Varian sidebar: kolom tetap sempit, tidak ikut aturan 220px di atas.
+   Tanpa minmax(0,1fr) teks judul tidak bisa menyusut dan panel meluber. */
+.news-item--compact { grid-template-columns: 84px minmax(0, 1fr); gap: 0.85rem; padding: 0.9rem 0; align-items: start; }
+@media (min-width: 768px) { .news-item--compact { grid-template-columns: 84px minmax(0, 1fr); } }
+.news-item--compact h3 { font-size: 0.95rem; line-height: 1.4; margin-bottom: 0.2rem; }
 
 /* ---------- ALUR RAIL ---------- */
 .rail { position: relative; display: grid; gap: 1.5rem; }
@@ -770,8 +777,23 @@ a:hover { color: var(--navy); }
 .notice.is-penting .notice-date b { color: #6B4E12; }
 
 /* ---------- PELENGKAP HALAMAN ---------- */
-.hero-meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; font-size: 0.82rem; color: var(--muted); margin-top: 1.5rem; }
+.hero-meta { display: flex; flex-wrap: wrap; gap: 0.6rem 1.5rem; font-size: 0.82rem; color: var(--muted); margin-top: 1.6rem; }
+.hero-meta > span { display: inline-flex; align-items: center; gap: 0.45rem; }
 .hero-meta i { color: var(--blue); }
+
+/* Layar sentuh: perbesar area sentuh tautan teks agar tidak salah tekan.
+   Desktop tetap rapat supaya ritme tipografi tidak renggang. */
+@media (hover: none) {
+  .link-arrow { min-height: 44px; }
+  .crumb a { min-height: 44px; display: inline-flex; align-items: center; }
+}
+
+/* Layar kecil: kurangi tinggi hero supaya aksi utama tidak jatuh di bawah lipatan. */
+@media (max-width: 575.98px) {
+  .hero { padding-top: 2rem; padding-bottom: 2rem; }
+  .hero-photo { padding: 2.5rem 1.5rem 2.25rem; }
+  .hero-badge { font-size: 0.78rem; }
+}
 .figure-bagan img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--r-md); background: #fff; }
 .figure-bagan figcaption { font-size: 0.86rem; color: var(--muted); margin-top: 0.6rem; }
 .figure-nilai { margin: 0; }

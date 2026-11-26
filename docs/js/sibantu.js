@@ -239,8 +239,8 @@
     var lain = document.getElementById('beritaLain');
     if (lain) {
       lain.innerHTML = data.berita.filter(function (x) { return x.id !== b.id; }).slice(0, 3).map(function (x) {
-        return '<a class="news-item" href="berita-detail.html?id=' + encodeURIComponent(x.id) + '">' +
-          '<div class="thumb">' + thumb(x) + '</div><div><h3 style="font-size:1rem">' + esc(x.judul) + '</h3>' +
+        return '<a class="news-item news-item--compact" href="berita-detail.html?id=' + encodeURIComponent(x.id) + '">' +
+          '<div class="thumb">' + thumb(x) + '</div><div><h3>' + esc(x.judul) + '</h3>' +
           '<span class="text-muted-2" style="font-size:.82rem">' + esc(tanggalPendek(x.tanggal)) + '</span></div></a>';
       }).join('');
     }
