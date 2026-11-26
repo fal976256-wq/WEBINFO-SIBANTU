@@ -58,18 +58,6 @@
       });
     });
 
-    var els = document.querySelectorAll('.reveal');
-    if ('IntersectionObserver' in window && els.length) {
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (en) {
-          if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
-        });
-      }, { rootMargin: '0px 0px -60px 0px' });
-      els.forEach(function (el) { io.observe(el); });
-    } else {
-      els.forEach(function (el) { el.classList.add('in'); });
-    }
-
     document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
   }
 
@@ -141,12 +129,17 @@
   function status(data) {
     var p = data.periode || {};
     var bar = document.querySelector('[data-progress]');
-    if (bar && p.kuota) {
-      var pct = Math.max(0, Math.min(100, Math.round((p.tersalurkan / p.kuota) * 100)));
+    var pct = p.kuota ? Math.max(0, Math.min(100, Math.round(((p.tersalurkan || 0) / p.kuota) * 100))) : 0;
+    if (bar) {
       bar.style.width = pct + '%';
-      var lbl = document.querySelector('[data-progress-label]');
-      if (lbl) lbl.textContent = (p.tersalurkan && p.tersalurkan > 0) ? pct + '% tersalurkan' : 'Dalam proses di BPKAD';
+      var track = bar.parentNode;
+      // Bar 0% terlihat seperti rusak; beri gaya netral + label jelas.
+      if (track) track.classList.toggle('is-empty', pct === 0);
     }
+    var lbl = document.querySelector('[data-progress-label]');
+    if (lbl) lbl.textContent = pct > 0 ? pct + '% tersalurkan' : '0% · menunggu pencairan tahap ini';
+    var aria = document.querySelector('[role="progressbar"]');
+    if (aria) aria.setAttribute('aria-valuenow', String(pct));
     document.querySelectorAll('[data-status-chip]').forEach(function (el) { el.textContent = p.status || 'Berlangsung'; });
     var draft = document.querySelector('[data-draft]');
     if (draft && data.meta && data.meta.draf) draft.hidden = false;
@@ -263,13 +256,18 @@
     };
     host.innerHTML = data.programBantuan.map(function (p) {
       var ic = iconMap[p.id] || 'bi-box-seam';
-      return '<div class="card reveal"><div class="d-flex justify-content-between align-items-start mb-2">' +
-        '<div class="icon-circle"><i class="bi ' + ic + '" aria-hidden="true"></i></div>' +
-        '<span class="chip chip--green">' + esc(p.status) + '</span></div>' +
-        '<h3>' + esc(p.nama) + '</h3><p>' + esc(p.ringkas) + '</p>' +
-        (p.deskripsi ? '<p style="font-size:.92rem;color:var(--ink-soft);margin:.5rem 0 1rem">' + esc(p.deskripsi) + '</p>' : '') +
-        '<hr class="hairline my-3"><p style="font-size:.88rem;margin:0"><strong>Sasaran.</strong> ' + esc(p.sasaran) + '</p>' +
-        '<p style="font-size:.88rem;margin:.5rem 0 0"><strong>Manfaat.</strong> ' + esc(p.manfaat) + '</p></div>';
+      return '<div class="col-md-6 col-lg-4 d-flex reveal">' +
+        '<article class="card card-program">' +
+        '<div class="card-program-head"><span class="icon-circle"><i class="bi ' + ic + '" aria-hidden="true"></i></span></div>' +
+        '<h3>' + esc(p.nama) + '</h3>' +
+        '<p class="card-summary">' + esc(p.ringkas) + '</p>' +
+        (p.deskripsi ? '<p class="card-detail">' + esc(p.deskripsi) + '</p>' : '') +
+        '<dl class="card-facts">' +
+        '<div><dt>Sasaran</dt><dd>' + esc(p.sasaran) + '</dd></div>' +
+        '<div><dt>Manfaat</dt><dd>' + esc(p.manfaat) + '</dd></div>' +
+        '</dl>' +
+        '<a class="link-arrow card-cta" href="program.html">Selengkapnya <i class="bi bi-arrow-right"></i></a>' +
+        '</article></div>';
     }).join('');
   }
 

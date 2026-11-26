@@ -116,29 +116,29 @@
     {
       "id": "bst",
       "nama": "Bantuan Sosial Tunai (BST)",
-      "ringkas": "Bantuan tunai Rp2.000.000/tahun (4 tahap × Rp500.000) untuk keluarga miskin ekstrem dan miskin lainnya. Disalurkan melalui bank penyalur.",
-      "sasaran": "Individu/keluarga miskin ekstrem dan miskin lainnya dalam DTSEN (Desil 1–2), bukan penerima PKH/BPNT APBN, bukan ASN/TNI/Polri/BUMN/aparat desa, dan lolos verifikasi berjenjang.",
-      "manfaat": "Dana bantuan disalurkan langsung kepada penerima melalui bank/pos penyalur, tanpa potongan.",
+      "ringkas": "Bantuan uang tunai per tahun untuk keluarga miskin ekstrem dan miskin lainnya, disalurkan lewat bank penyalur.",
+      "sasaran": "Keluarga miskin ekstrem dan miskin lainnya, Desil 1–2 DTSEN.",
+      "manfaat": "Rp2.000.000 per keluarga per tahun, empat tahap.",
       "status": "Berjalan",
-      "deskripsi": "Bantuan Sosial Tunai (BST) adalah program bantuan sosial bersumber dari APBD yang menyasar individu dan keluarga miskin ekstrem serta miskin lainnya di Provinsi Sulawesi Barat. Dana bantuan disalurkan langsung kepada penerima melalui bank atau pos penyalur, tanpa potongan, tanpa biaya administrasi, dan tanpa pungutan liar. Besaran bantuan pada tahun anggaran 2026 adalah Rp 2.000.000 per KPM per tahap, disalurkan dalam dua tahap sesuai penjadwalan resmi. Penerima ditetapkan melalui proses verifikasi berjenjang: musyawarah desa, pengusulan oleh operator SIBANTU, verifikasi Dinas Sosial Kabupaten/Kota, rekonsiliasi Provinsi, dan penetapan oleh Gubernur. Seluruh proses dari pengusulan sampai pencairan murni gratis."
+      "deskripsi": "Bantuan uang tunai bagi keluarga miskin ekstrem dan miskin lainnya, disalurkan lewat bank penyalur tanpa potongan."
     },
     {
       "id": "pendampingan",
       "nama": "Pendampingan Sosial",
-      "ringkas": "Pengarahan dan pendampingan agar penerima menggunakan dana sesuai tujuan program. Mendukung verifikasi data dan pemantauan penyaluran.",
-      "sasaran": "Penerima BST yang tidak dapat hadir sendiri ke lokasi penyaluran.",
-      "manfaat": "Pendampingan pengurusan dokumen dan pengantaran ke lokasi penyaluran.",
+      "ringkas": "Pengarahan agar penerima memanfaatkan dana secara tepat dan bertanggung jawab.",
+      "sasaran": "Penerima yang tidak dapat hadir sendiri di lokasi penyaluran.",
+      "manfaat": "Pendampingan dokumen dan pengantaran ke lokasi penyaluran.",
       "status": "Berjalan",
-      "deskripsi": "Pendampingan Sosial disediakan bagi penerima BST yang tidak dapat hadir sendiri ke lokasi penyaluran karena kondisi lanjut usia, penyandang disabilitas, tinggal di daerah terpencil, atau alasan ketidakhadiran lainnya yang dapat dipertanggungjawabkan. Pendamping membantu pengurusan dokumen dan mengantar penerima ke titik penyaluran. Pendamping ditunjuk oleh desa/kelurahan dan wajib membuat surat keterangan. Pendamping tidak menggantikan penerima sebagai pemilik hak atas dana; dana tetap atas nama penerima."
+      "deskripsi": "Pengarahan dan pendampingan agar penerima memanfaatkan dana secara tepat dan bertanggung jawab sesuai tujuan program."
     },
     {
       "id": "edukasi",
       "nama": "Edukasi & Sosialisasi Warga",
-      "ringkas": "Sosialisasi di tingkat desa untuk meningkatkan pemahaman program, kriteria penerima, dan pencegahan pungutan liar.",
+      "ringkas": "Sosialisasi desa agar warga memahami kriteria, dokumen, dan alur pengusulan.",
       "sasaran": "Warga, perangkat desa, dan pendamping sosial di enam kabupaten.",
-      "manfaat": "Warga memahami hak dan prosedur sehingga tidak bergantung pada perantara.",
+      "manfaat": "Warga memahami hak dan prosedur, tidak bergantung perantara.",
       "status": "Berjalan",
-      "deskripsi": "Kegiatan edukasi dan sosialisasi dilaksanakan di tingkat desa/kelurahan untuk memastikan seluruh warga memahami kriteria calon penerima, dokumen yang dibutuhkan, alur pengusulan, dan cara melaporkan permintaan uang (pungli). Materi disiapkan Dinsos Provinsi untuk digunakan oleh kepala desa/lurah, perangkat desa, dan pendamping sosial di enam kabupaten. Sosialisasi merupakan bagian wajib dari alur pengusulan: kriteria harus disosialisasikan sebelum musyawarah desa dilakukan."
+      "deskripsi": "Sosialisasi di tingkat desa agar warga memahami kriteria, dokumen, alur pengusulan, dan cara melaporkan permintaan uang."
     }
   ],
   "berita": [

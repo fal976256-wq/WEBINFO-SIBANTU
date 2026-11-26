@@ -126,11 +126,11 @@
             <p class="hero-lead">SIBANTU menyatukan persyaratan, alur pengusulan, jadwal pencairan, dan pengumuman resmi bantuan sosial tunai Provinsi Sulawesi Barat dalam satu portal.</p>
             <div class="hero-cta">
               <a class="btn btn-primary-custom" href="persyaratan.html">Lihat persyaratan <i class="bi bi-arrow-right"></i></a>
-              <a class="btn btn-outline-custom" href="alur.html">Cek alur pengusulan</a>
+              <a class="link-arrow" href="alur.html">Cek alur pengusulan <i class="bi bi-arrow-right"></i></a>
             </div>
             <div class="hero-meta">
               <span><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Diperbarui <span data-bind="meta.diperbarui" data-format="tanggal">5 November 2026</span></span>
-              <span><i class="bi bi-building" aria-hidden="true"></i><span data-bind="program.instansi">Dinas Sosial Pemberdayaan Perempuan dan Perlindungan Anak serta Pemberdayaan Masyarakat Desa Provinsi Sulawesi Barat</span></span>
+              <span><i class="bi bi-shield-check" aria-hidden="true"></i>Tanpa biaya dari pengusulan sampai pencairan</span>
             </div>
           </div>
 
@@ -145,13 +145,13 @@
                 <p class="periode mb-1"><span data-bind="periode.tahap">Tahap I–II</span> · <span data-bind="periode.tahun">2026</span></p>
                 <div class="status-meta">
                   <span><i class="bi bi-geo-alt me-1" aria-hidden="true"></i><span data-bind="periode.desaLokus" data-format="angka">285</span> desa/kelurahan · <span data-bind="periode.kabupaten">6</span> kabupaten</span>
-                  <span class="chip" data-status-chip>Berproses di BPKAD</span>
+                  <span class="chip chip--gold" data-status-chip>Berproses di BPKAD</span>
                 </div>
-                <div class="status-bar" role="progressbar" aria-label="Progres penyaluran" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span data-progress style="width:0%"></span></div>
+                <div class="status-bar is-empty" role="progressbar" aria-label="Progres penyaluran tahap berjalan" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span data-progress style="width:0%"></span></div>
                 <p class="mb-0 mt-2" style="font-size:.82rem;color:var(--muted);">
                   <span data-bind="periode.tersalurkan" data-format="angka">0</span> dari
-                  <span data-bind="periode.kuota" data-format="angka">2.251</span> <span data-bind="periode.satuan">KPM</span> ·
-                  <span data-progress-label>Dalam proses di BPKAD</span>
+                  <span data-bind="periode.kuota" data-format="angka">2.251</span> <abbr title="Keluarga Penerima Manfaat" style="text-decoration:none;border-bottom:1px dotted currentColor;cursor:help">KPM</abbr> ·
+                  <span data-progress-label>0% · menunggu pencairan tahap ini</span>
                 </p>
               </div>
             </div>
@@ -260,34 +260,46 @@
           </div>
           <a class="link-arrow" href="program.html">Semua program <i class="bi bi-arrow-right"></i></a>
         </div>
-        <p class="section-sub mb-4" style="max-width:70ch">Pemerintah Provinsi Sulawesi Barat melaksanakan layanan bantuan sosial untuk membantu masyarakat miskin ekstrem dan miskin lainnya dalam memenuhi kebutuhan dasar serta meningkatkan pemahaman masyarakat mengenai program bantuan. Terdapat tiga layanan utama yang mendukung pelaksanaan program.</p>
+        <p class="section-sub mb-4" style="max-width:62ch">Pemerintah Provinsi Sulawesi Barat melaksanakan layanan bantuan sosial untuk membantu masyarakat miskin ekstrem dan miskin lainnya dalam memenuhi kebutuhan dasar serta meningkatkan pemahaman masyarakat mengenai program bantuan. Terdapat tiga layanan utama yang mendukung pelaksanaan program.</p>
         <div class="row g-3" data-program>
-          <div class="col-md-4">
-            <div class="card" style="height:100%">
-              <div class="icon-circle mb-3"><i class="bi bi-cash-stack" aria-hidden="true"></i></div>
-              <h3>Penyaluran Bantuan Tunai</h3>
-              <p>Pemberian bantuan sosial berupa uang tunai kepada keluarga penerima manfaat yang telah memenuhi kriteria dan ditetapkan sebagai penerima.</p>
-              <p style="font-size:.88rem;margin-bottom:.75rem">Bantuan sebesar <strong>Rp2.000.000/tahun</strong> disalurkan melalui bank penyalur dalam <strong>4 tahap × Rp500.000</strong> untuk memenuhi kebutuhan pangan, sandang, dan papan.</p>
-              <a class="link-arrow" href="program.html" style="font-size:.88rem">Detail &amp; tahapan <i class="bi bi-arrow-right"></i></a>
-            </div>
+          <div class="col-md-6 col-lg-4 d-flex">
+            <article class="card card-program">
+              <div class="card-program-head"><span class="icon-circle"><i class="bi bi-cash-stack" aria-hidden="true"></i></span></div>
+              <h3>Bantuan Sosial Tunai (BST)</h3>
+              <p class="card-summary">Bantuan uang tunai per tahun untuk keluarga miskin ekstrem dan miskin lainnya, disalurkan lewat bank penyalur.</p>
+              <p class="card-detail">Bantuan uang tunai bagi keluarga miskin ekstrem dan miskin lainnya, disalurkan lewat bank penyalur tanpa potongan.</p>
+              <dl class="card-facts">
+                <div><dt>Sasaran</dt><dd>Keluarga miskin ekstrem dan miskin lainnya, Desil 1–2 DTSEN.</dd></div>
+                <div><dt>Manfaat</dt><dd>Rp2.000.000 per keluarga per tahun, empat tahap.</dd></div>
+              </dl>
+              <a class="link-arrow card-cta" href="program.html">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+            </article>
           </div>
-          <div class="col-md-4">
-            <div class="card" style="height:100%">
-              <div class="icon-circle icon-circle--gold mb-3"><i class="bi bi-people-fill" aria-hidden="true"></i></div>
+          <div class="col-md-6 col-lg-4 d-flex">
+            <article class="card card-program">
+              <div class="card-program-head"><span class="icon-circle icon-circle--gold"><i class="bi bi-people-fill" aria-hidden="true"></i></span></div>
               <h3>Pendampingan Sosial</h3>
-              <p>Pengarahan dan pendampingan agar penerima memanfaatkan dana bantuan secara tepat, bertanggung jawab, dan sesuai tujuan program.</p>
-              <p style="font-size:.88rem;margin-bottom:.75rem">Mendukung pencocokan data, verifikasi calon penerima, dan pemantauan penyaluran. Masyarakat memperoleh pemahaman dan dukungan dalam mengikuti ketentuan program.</p>
-              <a class="link-arrow" href="program.html" style="font-size:.88rem">Detail layanan <i class="bi bi-arrow-right"></i></a>
-            </div>
+              <p class="card-summary">Pengarahan agar penerima memanfaatkan dana secara tepat dan bertanggung jawab.</p>
+              <p class="card-detail">Pengarahan dan pendampingan agar penerima memanfaatkan dana secara tepat dan bertanggung jawab sesuai tujuan program.</p>
+              <dl class="card-facts">
+                <div><dt>Sasaran</dt><dd>Penerima yang tidak dapat hadir sendiri di lokasi penyaluran.</dd></div>
+                <div><dt>Manfaat</dt><dd>Pendampingan dokumen dan pengantaran ke lokasi penyaluran.</dd></div>
+              </dl>
+              <a class="link-arrow card-cta" href="program.html">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+            </article>
           </div>
-          <div class="col-md-4">
-            <div class="card" style="height:100%">
-              <div class="icon-circle icon-circle--green mb-3"><i class="bi bi-megaphone-fill" aria-hidden="true"></i></div>
+          <div class="col-md-6 col-lg-4 d-flex">
+            <article class="card card-program">
+              <div class="card-program-head"><span class="icon-circle icon-circle--green"><i class="bi bi-megaphone-fill" aria-hidden="true"></i></span></div>
               <h3>Edukasi Warga</h3>
-              <p>Kegiatan sosialisasi di tingkat desa untuk meningkatkan pemahaman masyarakat mengenai program bantuan sosial tunai, kriteria penerima, dan cara menyampaikan keberatan.</p>
-              <p style="font-size:.88rem;margin-bottom:.75rem">Termasuk edukasi pencegahan pungutan liar dan informasi kanal resmi konfirmasi status.</p>
-              <a class="link-arrow" href="program.html" style="font-size:.88rem">Detail layanan <i class="bi bi-arrow-right"></i></a>
-            </div>
+              <p class="card-summary">Sosialisasi desa agar warga memahami kriteria, dokumen, dan alur pengusulan.</p>
+              <p class="card-detail">Sosialisasi di tingkat desa agar warga memahami kriteria, dokumen, alur pengusulan, dan cara melaporkan permintaan uang.</p>
+              <dl class="card-facts">
+                <div><dt>Sasaran</dt><dd>Warga, perangkat desa, dan pendamping sosial di enam kabupaten.</dd></div>
+                <div><dt>Manfaat</dt><dd>Warga memahami hak dan prosedur, tidak bergantung perantara.</dd></div>
+              </dl>
+              <a class="link-arrow card-cta" href="program.html">Selengkapnya <i class="bi bi-arrow-right"></i></a>
+            </article>
           </div>
         </div>
       </div>
