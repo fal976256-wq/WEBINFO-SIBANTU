@@ -572,13 +572,30 @@ a:hover { color: var(--navy); }
 @media (min-width: 992px) { .sticky-lg { position: sticky; top: calc(var(--header-h) + 1rem); } }
 
 .row-line {
-  display: grid; grid-template-columns: minmax(92px, 32%) minmax(0, 1fr);
-  gap: 0.2rem 1rem;
+  display: grid; grid-template-columns: minmax(88px, 46%) minmax(0, 1fr);
+  gap: 0.25rem 1rem; align-items: baseline;
   padding: 0.8rem 0; border-bottom: 1px solid var(--line); font-size: 0.95rem;
 }
 .row-line:last-child { border-bottom: 0; padding-bottom: 0; }
-.row-line .k { color: var(--muted); margin: 0; font-size: 0.9rem; }
-.row-line .v { color: var(--navy); font-weight: 600; margin: 0; text-align: left; overflow-wrap: anywhere; }
+.row-line .k { color: var(--muted); margin: 0; font-size: 0.9rem; line-height: 1.4; }
+/* Nilai pendek (angka, jam, surel) rata kanan supaya membentuk kolom yang bisa dipindai. */
+.row-line .v { color: var(--navy); font-weight: 600; margin: 0; text-align: right; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+/* Nilai panjang seperti alamat lebih enak dibaca rata kiri, label di atas. */
+.row-line--wide { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+.row-line--wide .v { text-align: left; }
+
+/* Baris statistik dengan keterangan di bawahnya.
+   Garis pemisah diletakkan di dasar grup, bukan di antara nilai dan keterangan —
+   kalau tidak, keterangan terbaca sebagai milik baris berikutnya. */
+/* Pemisah lewat sibling, bukan :last-of-type — baris terakhir bukan anak terakhir
+   (masih ada kotak catatan di bawahnya), jadi :last-of-type tidak pernah cocok. */
+.stat-row { padding: 0.85rem 0; }
+.stat-row + .stat-row { border-top: 1px solid var(--line); }
+.stat-row:last-child { padding-bottom: 0; }
+.stat-row-head { display: grid; grid-template-columns: minmax(88px, 46%) minmax(0, 1fr); gap: 0.25rem 1rem; align-items: baseline; }
+.stat-row-head .k { color: var(--muted); font-size: 0.9rem; line-height: 1.4; }
+.stat-row-head .v { color: var(--navy); font-weight: 700; font-size: 1.05rem; text-align: right; font-variant-numeric: tabular-nums; }
+.stat-row-note { margin: 0.3rem 0 0; font-size: 0.84rem; color: var(--muted); line-height: 1.5; }
 
 .note {
   display: flex; gap: 0.85rem;
