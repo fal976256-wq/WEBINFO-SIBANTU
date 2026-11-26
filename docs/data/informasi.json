@@ -160,12 +160,12 @@
       "id": "verifikasi-bap",
       "tanggal": "2026-10-30",
       "kategori": "Validasi",
-      "judul": "Verifikasi kabupaten selesai, BAP 42 desa diteruskan ke provinsi",
-      "ringkas": "Dokumen Berita Acara Pemeriksaan dari 42 desa/kelurahan sudah diterima untuk direkonsiliasi.",
+      "judul": "Verifikasi kabupaten selesai, keputusan Bupati 42 desa diteruskan ke provinsi",
+      "ringkas": "Keputusan Bupati dari 42 desa/kelurahan sudah diterima untuk direkonsiliasi.",
       "isi": [
         "Verifikator kabupaten/kota telah menyelesaikan pemeriksaan data calon penerima dari 42 desa/kelurahan. Pemeriksaan mencakup kesesuaian kriteria dan validitas identitas, termasuk pencocokan NIK.",
-        "Setelah seluruh data dalam satu desa/kelurahan disetujui, dinas sosial kabupaten menyusun Berita Acara Pemeriksaan (BAP) dan meneruskannya kepada provinsi.",
-        "Provinsi selanjutnya melakukan rekonsiliasi data dengan kabupaten/kota serta verifikasi ulang identitas sebelum penerima ditetapkan.",
+        "Setelah seluruh data satu desa/kelurahan disetujui, usulan ditetapkan dengan Keputusan Bupati dan dilampiri Surat Pernyataan Tanggung Jawab Mutlak (SPTJM) yang ditandatangani Bupati, kemudian diteruskan kepada provinsi.",
+        "Provinsi selanjutnya melakukan telaah kesesuaian kriteria dan rekonsiliasi data dengan kabupaten/kota serta verifikasi ulang identitas sebelum penerima ditetapkan dengan Keputusan Gubernur.",
         "Data yang belum lolos verifikasi dikembalikan ke operator desa untuk diperbaiki melalui aplikasi SIBANTU."
       ],
       "foto": "aset/galeri/pencetakan-bap-kab-polman.webp"
@@ -292,8 +292,8 @@
       "foto": "aset/galeri/pembukaan-rekening-di-kecamatan-tappalang.webp"
     },
     {
-      "judul": "Pencetakan BAP Kab Polman",
-      "keterangan": "Verifikasi & BAP · dokumentasi kegiatan SIBANTU.",
+      "judul": "Penetapan Keputusan Bupati Polman",
+      "keterangan": "Verifikasi & penetapan · dokumentasi kegiatan SIBANTU.",
       "tanggal": "2026-09-15",
       "foto": "aset/galeri/pencetakan-bap-kab-polman.webp"
     },
@@ -346,12 +346,12 @@
       {
         "nama": "SPTJM Kolektif",
         "tahap": "Desa/Kelurahan",
-        "keterangan": "Pernyataan tanggung jawab mutlak kepala desa atas kriteria calon."
+        "keterangan": "Pernyataan tanggung jawab mutlak kepala desa/lurah atas kriteria calon, bermaterai Rp10.000 dan bercap desa."
       },
       {
-        "nama": "Berita Acara Pemeriksaan (BAP)",
+        "nama": "Keputusan Bupati dan SPTJM Bupati",
         "tahap": "Kabupaten/Kota",
-        "keterangan": "Hasil verifikasi data satu desa/kelurahan."
+        "keterangan": "Penetapan usulan calon penerima tingkat kabupaten, dilampiri SPTJM yang ditandatangani Bupati."
       },
       {
         "nama": "Rekomendasi Provinsi",

@@ -66,7 +66,7 @@
     { t: 'Beranda', d: 'Informasi utama bantuan sosial tunai', u: 'index.html' },
     { t: 'Profil SIBANTU', d: 'Latar, peran, dan prinsip layanan', u: 'profil.html' },
     { t: 'Persyaratan & kriteria', d: 'Dokumen wajib dibawa dan kriteria penerima', u: 'persyaratan.html' },
-    { t: 'Alur pengusulan', d: 'Delapan langkah dari desa sampai penetapan Gubernur', u: 'alur.html' },
+    { t: 'Alur pengusulan', d: 'Sembilan langkah dari permintaan data DTSEN sampai pencairan', u: 'alur.html' },
     { t: 'Program bantuan sosial', d: 'Jenis layanan dan sasaran penerima', u: 'program.html' },
     { t: 'Sosialisasi & edukasi', d: 'Materi sosialisasi untuk desa dan warga', u: 'sosialisasi.html' },
     { t: 'Pengumuman resmi', d: 'Jadwal, ketentuan, dan peringatan', u: 'pengumuman.html' },
